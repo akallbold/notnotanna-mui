@@ -1,24 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Grid from "@mui/material/Unstable_Grid2"; // Grid version 2
+import Landing from "./Landing";
+import About from "./About";
+import Projects from "./Projects";
+import Pictures from "./Pictures";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Grid container id="entire-app-grid" flexDirection="column" px={3} py={3}>
+        <Landing />
+        <About />
+        {/* <Projects /> */}
+        <Pictures />
+      </Grid>
     </div>
   );
 }
