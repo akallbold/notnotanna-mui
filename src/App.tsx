@@ -11,7 +11,7 @@ function App() {
       <Grid container id="entire-app-grid" flexDirection="column" px={3} py={3}>
         <Landing />
         <About />
-        {/* <Projects /> */}
+        <Projects />
         <Pictures />
       </Grid>
     </div>

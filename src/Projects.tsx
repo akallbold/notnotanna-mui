@@ -26,6 +26,7 @@ function Projects() {
         <Grid xs={12} md={6} lg={4} xl={3}>
           <ProjectCard
             description={project.description}
+            githubLink={project.githubLink}
             key={project.title}
             img={project.img}
             imgAlt={project.imgAlt}

@@ -6,6 +6,7 @@ export const ErrorPages = {
   img: "/images/422.png",
   imgAlt: "example of an error page",
   description: "",
+  githubLink: "",
 };
 
 export const LiveWire = {
@@ -15,6 +16,7 @@ export const LiveWire = {
   link: constants.livewireURL,
   img: "/images/livewire-homepage.png",
   imgAlt: "livewire homepage",
+  githubLink: "",
 };
 
 export const Haikus = {
@@ -24,6 +26,7 @@ export const Haikus = {
   link: "/meditations",
   img: "/images/marcus.jpg",
   imgAlt: "Marcus Aurelius",
+  githubLink: "",
 };
 
 export const StickerApp = {
@@ -33,6 +36,7 @@ export const StickerApp = {
   link: "/stickers",
   img: "/images/Pair_Programming.png",
   imgAlt: "Two octopi pair programming",
+  githubLink: "",
 };
 
 export const ShantellTypewriter = {
@@ -42,6 +46,7 @@ export const ShantellTypewriter = {
   link: constants.shantellSansUrl,
   img: "/images/shantell-sans.png",
   imgAlt: "example of shantell sans font",
+  githubLink: "",
 };
 
 export const NotBitly = {
@@ -51,6 +56,7 @@ export const NotBitly = {
   link: constants.notbitlyURL,
   img: "/images/monkeycat.jpeg",
   imgAlt: "placeholder image",
+  githubLink: "",
 };
 
 export const AdvancedChatGPT = {
@@ -60,4 +66,5 @@ export const AdvancedChatGPT = {
   link: "/advanced-chatgpt",
   img: "/images/chatGPT.png",
   imgAlt: "screenshot of ChatGPT",
+  githubLink: "",
 };
