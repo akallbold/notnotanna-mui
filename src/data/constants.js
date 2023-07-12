@@ -6,4 +6,5 @@ export const constants = {
   notbitlyURL: "notbitly.com",
   promptEngineeringCourseUrl:
     "https://learn.deeplearning.ai/chatgpt-prompt-eng/lesson/",
+  githubUrl: "https://github.com/akallbold",
 };

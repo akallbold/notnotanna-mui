@@ -27,12 +27,10 @@ const ProjectCard: React.FunctionComponent<IProjectCard> = ({
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia component="img" alt={imgAlt} height="140" image={img} />
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography gutterBottom variant="h3">
           {title}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
-          {description}
-        </Typography>
+        <Typography variant="body2">{description}</Typography>
       </CardContent>
       <CardActions>
         <a href={link} target="_blank" rel="noopener noreferrer">

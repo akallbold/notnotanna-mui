@@ -62,21 +62,17 @@ export const theme = createTheme({
   },
   palette: {
        primary: {
-      main: '#003A63',
+      main: '#EDB5B4', // tea rose
+      dark:"#074F57" // midnight green
     },
     secondary: {
-      main: '#FFC82E',
-      dark: '#2A6EBB',
+      main: '#2A6EBB', // celtic blue
+      dark: '#0C1B33', // oxford blue
     },
+
     text: {
-      primary: '#2F2F2F',
-      secondary: '#002A47',
-    },
-    error: {
-      main: '#D32F2F',
-    },
-    success: {
-      main: '#5C8727',
+      primary: '#FEE7E6',
+      secondary: '#FEE7E6',
     },
     divider: '#00000050',
   },
@@ -84,11 +80,11 @@ export const theme = createTheme({
     h1: {
       fontSize: 34,
       fontWeight: 800,
-      color: '#002A47',
+      color: "#074F57",
       paddingBottom: '8px',
     },
     h2: {
-      color: '#002A47',
+      color: "#074F57",
       fontSize: 24,
       fontWeight: 800,
       lineHeight: 1.375,
@@ -97,22 +93,22 @@ export const theme = createTheme({
     h3: {
       fontWeight: 800,
       fontSize: 20,
-      color: '#275677',
+      color: "#074F57",
     },
     h4: {
       fontSize: 16,
       fontWeight: 700,
-      color: '#2F2F2F',
+      color: "#074F57",
     },
     body1: {
       fontSize: 16,
-      color: '#2F2F2F',
+      color: "#074F57",
       fontWeight: 400,
       lineHeight: 1.625,
     },
     body2: {
       fontSize: 16,
-      color: '#2F2F2F',
+      color: "#074F57",
       fontWeight: 800,
     },
     button: {
@@ -122,12 +118,12 @@ export const theme = createTheme({
     },
     caption: {
       fontSize: 12,
-      color: '#6D6D6D',
+      color: "#074F57",
     },
     subtitle1: {
       fontSize: 14,
       fontWeight: 700,
-      color: '#002A47',
+      color:"#074F57",
     },
     fontFamily: `'Open Sans', sans-serif`,
   },

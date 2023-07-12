@@ -39,9 +39,14 @@ function Projects() {
   };
 
   return (
-    <Grid container flexDirection="column">
+    <Grid
+      container
+      flexDirection="column"
+      id="projects-grid"
+      sx={{ height: "100vh" }}
+    >
       <Grid>
-        <Typography>Projects</Typography>
+        <Typography variant="h1">Projects</Typography>
       </Grid>
       <Grid container spacing={3}>
         {projectCardData()}

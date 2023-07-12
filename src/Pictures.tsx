@@ -10,12 +10,12 @@ function Pictures() {
   return (
     <Grid
       container
-      sx={{ width: "100%" }}
+      sx={{ width: "100%", height: "100vh" }}
       flexDirection="column"
       alignContent="center"
     >
       <Grid sx={{ width: "100%" }}>
-        <Typography>Tech memories over the years</Typography>
+        <Typography variant="h1">Memory Lane</Typography>
       </Grid>
       <Grid sx={{ width: "100%" }}>
         <Carousel height="50vh" interval={10000}>

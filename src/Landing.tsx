@@ -4,8 +4,9 @@ import Typography from "@mui/material/Typography";
 
 function Landing() {
   return (
-    <Grid container sx={{ height: "50vh" }}>
-      <Typography>Landing</Typography>
+    <Grid container sx={{ height: "50vh" }} id="landing-grid">
+      <Typography variant="h1">Landing</Typography>
+      {/* generate AI image and put here */}
     </Grid>
   );
 }
