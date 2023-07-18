@@ -1,32 +1,58 @@
 import Grid from "@mui/material/Unstable_Grid2"; // Grid version 2
-import Typography from "@mui/material/Typography";
 import Carousel from "react-material-ui-carousel";
-import PictureItem from "../../PictureItem";
 import { Gateway, GoogleGlass, IOT, MagicLeap, TBL } from "../../data/pictures";
+import { useEffect, useState } from "react";
+import PictureItemLarge from "../../PictureItemLarge";
+import PictureItemSmall from "../../PictureItemSmall";
+import useLanguage from "../../hooks/useLanguage";
 
 const items = [Gateway, GoogleGlass, IOT, MagicLeap, TBL];
 function Pictures() {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const { language } = useLanguage();
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
-    <Grid
-      container
-      sx={{
-        width: "100%",
-        // height: "100vh"
-      }}
-      flexDirection="column"
-      alignContent="center"
+    // <Grid
+    //   id="grid-above-carosel"
+    //   flexDirection="row"
+    // >
+    <Carousel
+      // height="50vh"
+      interval={8000}
+      navButtonsAlwaysInvisible={windowWidth > 800 ? false : true}
     >
-      <Grid sx={{ width: "100%" }}>
-        <Typography variant="h1">Memory Lane</Typography>
-      </Grid>
-      <Grid sx={{ width: "100%" }}>
-        <Carousel height="50vh" interval={10000}>
-          {items.map((item, i) => (
-            <PictureItem key={i} item={item} />
-          ))}
-        </Carousel>
-      </Grid>
-    </Grid>
+      {items.map((item, i) => {
+        if (windowWidth > 800)
+          return (
+            <PictureItemLarge
+              key={i}
+              img={item.img}
+              description={item.description["en"]}
+              date={item.date}
+              imgAlt={item.imgAlt}
+            />
+          );
+        return (
+          <PictureItemSmall
+            key={i}
+            img={item.img}
+            description={item.description["en"]}
+            date={item.date}
+            imgAlt={item.imgAlt}
+          />
+        );
+      })}
+    </Carousel>
+    // </Grid>
   );
 }
 

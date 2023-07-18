@@ -5,11 +5,11 @@ import Box from "@mui/material/Box";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import { useState } from "react";
-import AboutPanel from "./AboutPanel-delete";
 import { Divider } from "@mui/material";
 import TabPanel from "./TabPanel";
 import ProjectCard from "./ProjectCard";
 import { PodBrowser, LiveWire, Intermountain } from "./data/projects";
+import PanelGrid from "./PanelGrid";
 function AboutLarge(data: any) {
   function a11yProps(index: number) {
     return {
@@ -25,26 +25,19 @@ function AboutLarge(data: any) {
   };
 
   return (
-    <Grid container sx={{ height: "80vh" }} id="about-large-grid">
-      <Box
-        sx={{
-          flexShrink: 2,
-        }}
-      >
+    <Grid container id="about-large-grid">
+      <Box>
         <Typography variant="h1">About Me</Typography>
       </Box>
       <Box
         sx={{
-          flexGrow: 1,
-          bgcolor: "background.paper",
           display: "flex",
-          height: "75%",
+          id: "padding-issue? ",
+          paddingTop: "0px",
         }}
-        // style={{ backgroundColor: "green" }}
       >
         <Tabs
           orientation="vertical"
-          // variant="scrollable"
           value={value}
           onChange={handleChange}
           aria-label="vertical-about-tabs"
@@ -52,44 +45,16 @@ function AboutLarge(data: any) {
             borderRight: 1,
             borderColor: "divider",
             width: "100%",
-            maxWidth: "25%",
-            height: "100%",
           }}
         >
-          <Tab
-            label="Work"
-            {...a11yProps(0)}
-            sx={{
-              height: "20%",
-            }}
-          />
-          <Tab
-            label="Education"
-            {...a11yProps(1)}
-            sx={{
-              height: "20%",
-            }}
-          />
-          <Tab
-            label="Certifications"
-            {...a11yProps(2)}
-            sx={{
-              height: "20%",
-            }}
-          />
-          <Tab
-            label="Pride"
-            {...a11yProps(3)}
-            sx={{
-              height: "20%",
-            }}
-          />
+          <Tab label="Work" {...a11yProps(0)} id="interesting" />
+          <Tab label="Education" {...a11yProps(1)} />
+          <Tab label="Certifications" {...a11yProps(2)} />
+          <Tab label="Pride" {...a11yProps(3)} />
         </Tabs>
         <TabPanel value={value} index={0}>
-          <Grid container justifyContent="center">
-            <Grid flexDirection="column">
-              <Typography variant="h3">{data.data.work}</Typography>
-            </Grid>
+          <Grid container>
+            <PanelGrid text={data.data.work}></PanelGrid>
             <Grid
               container
               flexDirection="row"
@@ -99,15 +64,9 @@ function AboutLarge(data: any) {
               sx={{
                 width: "100%",
                 flexWrap: "nowrap",
-                // paddingBottom: "5px",
               }}
             >
-              <Grid
-                px={3}
-                sx={{
-                  paddingBottom: "5px",
-                }}
-              >
+              <Grid px={3}>
                 <ProjectCard
                   description={PodBrowser.description}
                   key={PodBrowser.title}
@@ -144,9 +103,7 @@ function AboutLarge(data: any) {
         </TabPanel>
         <TabPanel value={value} index={1}>
           <Grid container justifyContent="center">
-            <Grid flexDirection="column" py={5}>
-              <Typography variant="h3">{data.data.education}</Typography>
-            </Grid>
+            <PanelGrid text={data.data.education}></PanelGrid>
             <Grid
               container
               flexDirection="row"
@@ -174,9 +131,7 @@ function AboutLarge(data: any) {
         </TabPanel>
         <TabPanel value={value} index={2}>
           <Grid container justifyContent="center">
-            <Grid flexDirection="column" py={5}>
-              <Typography variant="h3">{data.data.certifications}</Typography>
-            </Grid>
+            <PanelGrid text={data.data.certifications}></PanelGrid>
             <Grid
               container
               flexDirection="row"
@@ -239,9 +194,7 @@ function AboutLarge(data: any) {
         </TabPanel>
         <TabPanel value={value} index={3}>
           <Grid container justifyContent="center">
-            <Grid flexDirection="column" py={5}>
-              <Typography variant="h3">{data.data.pride}</Typography>
-            </Grid>
+            <PanelGrid text={data.data.education}></PanelGrid>
             <Grid
               container
               flexDirection="row"
@@ -254,16 +207,11 @@ function AboutLarge(data: any) {
                   width="420"
                   height="315"
                   src="https://www.youtube.com/embed?v=rAJbRdx2wDE&t=82s"
+                  title="Anna at Romba"
                 ></iframe>
               </Grid>
               <Divider orientation="vertical" />
-              <Grid
-                container
-                flexDirection="column"
-                alignSelf="center"
-                alignItems="center"
-                sx={{ backgroundColor: "yellow" }}
-              >
+              <Grid container flexDirection="column" alignSelf="center">
                 <img
                   src="/images/pla-pride.png"
                   alt="BCG Pride slide"

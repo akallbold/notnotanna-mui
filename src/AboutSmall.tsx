@@ -25,7 +25,9 @@ export default function AboutSmall(data: any) {
           <Typography>Work</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>{data.data.work}</Typography>
+          <Typography variant="body1" sx={{ textAlign: "left" }}>
+            {data.data.work}
+          </Typography>
         </AccordionDetails>
       </Accordion>
       <Accordion>
@@ -37,7 +39,9 @@ export default function AboutSmall(data: any) {
           <Typography>Education</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>{data.data.education}</Typography>
+          <Typography variant="body1" sx={{ textAlign: "left" }}>
+            {data.data.education}
+          </Typography>
         </AccordionDetails>
       </Accordion>
 
@@ -50,7 +54,9 @@ export default function AboutSmall(data: any) {
           <Typography>Certifications</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>{data.data.certifications}</Typography>
+          <Typography variant="body1" sx={{ textAlign: "left" }}>
+            {data.data.certifications}
+          </Typography>
         </AccordionDetails>
       </Accordion>
 
@@ -63,7 +69,9 @@ export default function AboutSmall(data: any) {
           <Typography>Pride</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>{data.data.pride}</Typography>
+          <Typography variant="body1" sx={{ textAlign: "left" }}>
+            {data.data.pride}
+          </Typography>
         </AccordionDetails>
       </Accordion>
     </div>

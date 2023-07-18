@@ -38,15 +38,23 @@ function App() {
           py={3}
         >
           {/* <Landing /> */}
-          <div ref={about} className="about">
+          <div ref={about} className="about" style={{ padding: "24px 0px" }}>
             <About />
           </div>
           <Divider />
-          <div ref={projects} className="projects">
+          <div
+            ref={projects}
+            className="projects"
+            style={{ padding: "24px 0px" }}
+          >
             <Projects />
           </div>
           <Divider />
-          <div ref={pictures} className="pictures">
+          <div
+            ref={pictures}
+            className="pictures"
+            style={{ padding: "24px 0px" }}
+          >
             <Pictures />
           </div>
         </Grid>
