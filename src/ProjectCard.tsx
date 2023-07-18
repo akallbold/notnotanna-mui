@@ -9,10 +9,10 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 
 type IProjectCard = {
   description: string;
-  githubLink: string;
+  githubLink?: string;
   img: string;
   imgAlt: string;
-  link: string;
+  link?: string;
   title: string;
 };
 const ProjectCard: React.FunctionComponent<IProjectCard> = ({
@@ -33,7 +33,12 @@ const ProjectCard: React.FunctionComponent<IProjectCard> = ({
         <Typography variant="body2">{description}</Typography>
       </CardContent>
       <CardActions>
-        <a href={link} target="_blank" rel="noopener noreferrer">
+        <a
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="link"
+        >
           Link to site
         </a>
         {githubLink && (

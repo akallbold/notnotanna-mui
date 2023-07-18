@@ -11,11 +11,18 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import { constants } from "./data/constants";
+import { constants } from "../../data/constants";
 
-const pages = ["About Me", "Projects", "Memory Lane"];
+const pages = [
+  { label: "About Me", elementName: "about" },
+  { label: "Projects", elementName: "projects" },
+  { label: "Memory Lane", elementName: "pictures" },
+];
 
-function Header() {
+function Header(props: any) {
+  const { scrollToSection } = props;
+
+  console.log({ scrollToSection });
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
     null
   );
@@ -80,8 +87,14 @@ function Header() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                <MenuItem
+                  key={page.label}
+                  onClick={() => {
+                    console.log({ page });
+                    scrollToSection(page.elementName);
+                  }}
+                >
+                  <Typography textAlign="center">{page.label}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -108,11 +121,14 @@ function Header() {
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <Button
-                key={page}
-                onClick={handleCloseNavMenu}
+                key={page.label}
+                onClick={() => {
+                  console.log({ page });
+                  scrollToSection(page.elementName);
+                }}
                 sx={{ my: 2, color: "white", display: "block" }}
               >
-                {page}
+                {page.label}
               </Button>
             ))}
             <GitHubIcon

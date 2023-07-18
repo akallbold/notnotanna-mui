@@ -68,3 +68,23 @@ export const AdvancedChatGPT = {
   imgAlt: "screenshot of ChatGPT",
   githubLink: "",
 };
+
+export const PodBrowser = {
+  description:
+    "PodBrowser is a tool used to access your Pod using the Solid protocol. This was one of the public projects I was involved with while at Inrupt.",
+  title: "PodBrowser",
+  img: "/images/podbrowser.png",
+  imgAlt: "screenshot of PodBrowser",
+  githubLink: "",
+  link: "https://podbrowser.inrupt.com/",
+};
+
+export const Intermountain = {
+  description:
+    "Using React Native we built a mobile app for Intermountain Healthcare. This app allows users to access their medical records, schedule appointments, and more.",
+  title: "Intermountain Healthcare App",
+  img: "/images/intermountain.png",
+  imgAlt: "screenshot of intermountain my health app",
+  githubLink: "",
+  link: "https://apps.apple.com/us/app/my-health-by-intermountain/id1454432442",
+};
