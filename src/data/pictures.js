@@ -8,6 +8,7 @@ export const Gateway = {
   },
   img: "/images/slideshow/gateway.png",
   imgAlt: "Young Anna playing at the computer.",
+  experience: ["SkiFree", "Space Pinball", "Microsoft Bob"],
 };
 
 export const GoogleGlass = {
@@ -20,6 +21,7 @@ export const GoogleGlass = {
   },
   img: "/images/slideshow/google-glass.jpg",
   imgAlt: "Anna loving the Google Glasses.",
+  experience: [],
 };
 
 export const IOT = {
@@ -32,6 +34,7 @@ export const IOT = {
   },
   img: "/images/slideshow/iot.png",
   imgAlt: "Anna working on IOT things.",
+  experience: ["Azure IOT Hub", "Interstacks interface", "soldering"],
 };
 
 export const MagicLeap = {
@@ -44,6 +47,7 @@ export const MagicLeap = {
   },
   img: "/images/slideshow/magic-leap.png",
   imgAlt: "Anna wearing MagicLeap goggles.",
+  experience: ["MagicLeap", "Unity"],
 };
 
 export const TBL = {
@@ -56,4 +60,5 @@ export const TBL = {
   },
   img: "/images/slideshow/tbl.png",
   imgAlt: "Anna and Tim Berners Lee.",
+  experience: ["Solid", "Development without Stackoverflow"],
 };
