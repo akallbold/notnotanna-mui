@@ -1,11 +1,13 @@
 import Grid from "@mui/material/Unstable_Grid2"; // Grid version 2
 import Typography from "@mui/material/Typography";
+import PictureItemList from "./PictureItemList";
 
 type IPictureItem = {
   description: string;
   img: string;
   imgAlt: string;
   date: string;
+  experience: any;
 };
 
 const PictureItemLarge: React.FunctionComponent<IPictureItem> = ({
@@ -13,6 +15,7 @@ const PictureItemLarge: React.FunctionComponent<IPictureItem> = ({
   description,
   date,
   imgAlt,
+  experience,
 }) => {
   return (
     <Grid
@@ -38,9 +41,8 @@ const PictureItemLarge: React.FunctionComponent<IPictureItem> = ({
         </Grid>
       </Grid>
       <Grid id="grid-4" sx={{ width: "50%" }} px={2}>
-        <Typography variant="body2" sx={{ textAlign: "left" }}>
-          {description}
-        </Typography>
+        <Typography variant="body2">{description}</Typography>
+        <PictureItemList experience={experience} />
       </Grid>
     </Grid>
   );

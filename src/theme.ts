@@ -110,6 +110,7 @@ export const theme = createTheme({
       fontSize: 16,
       color: "#074F57",
       fontWeight: 800,
+      textAlign:'left'
     },
     button: {
       fontWeight: 800,

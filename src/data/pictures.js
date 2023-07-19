@@ -8,14 +8,18 @@ export const Gateway = {
   },
   img: "/images/slideshow/gateway.png",
   imgAlt: "Young Anna playing at the computer.",
-  experience: ["SkiFree", "Space Pinball", "Microsoft Bob"],
+  experience: [
+    { text: "SkiFree", icon: "DownhillSkiingIcon" },
+    { text: "Space Pinball", icon: "" },
+    { text: "Microsoft Bob", icon: "" },
+  ],
 };
 
 export const GoogleGlass = {
   date: "2014",
   description: {
     de: "OK Google - let's bring Glasses back, we are ready this time.",
-    en: "OK Google - let's bring Glasses back, we are ready this time. It's hard to believe how far ahead of it's time the Google Glass was. I remember putting them on and being blown away, but couldn't afford the $1,500 price tag.",
+    en: "OK Google - let's bring Glasses back, we are ready this time. It's hard to believe how far ahead of it's time the Google Glass was. I remember putting them on and being blown away, but being less excited by the $1,500 price tag.",
     es: "OK Google - let's bring Glasses back, we are ready this time.",
     se: "OK Google - let's bring Glasses back, we are ready this time.",
   },
@@ -34,7 +38,11 @@ export const IOT = {
   },
   img: "/images/slideshow/iot.png",
   imgAlt: "Anna working on IOT things.",
-  experience: ["Azure IOT Hub", "Interstacks interface", "soldering"],
+  experience: [
+    { text: "Azure IOT Hub", icon: "" },
+    { text: "Interstacks", icon: "" },
+    { text: "soldering", icon: "" },
+  ],
 };
 
 export const MagicLeap = {
@@ -47,7 +55,10 @@ export const MagicLeap = {
   },
   img: "/images/slideshow/magic-leap.png",
   imgAlt: "Anna wearing MagicLeap goggles.",
-  experience: ["MagicLeap", "Unity"],
+  experience: [
+    { text: "MagicLeap", icon: "" },
+    { text: "Unity", icon: "" },
+  ],
 };
 
 export const TBL = {
@@ -60,5 +71,8 @@ export const TBL = {
   },
   img: "/images/slideshow/tbl.png",
   imgAlt: "Anna and Tim Berners Lee.",
-  experience: ["Solid", "Development without Stackoverflow"],
+  experience: [
+    { text: "Solid", icon: "" },
+    { text: "Development without Stackoverflow", icon: "" },
+  ],
 };

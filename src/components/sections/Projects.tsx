@@ -1,7 +1,6 @@
 import Grid from "@mui/material/Unstable_Grid2"; // Grid version 2
 import Typography from "@mui/material/Typography";
 import {
-  LiveWire,
   Haikus,
   ShantellTypewriter,
   StickerApp,
@@ -16,13 +15,12 @@ function Projects() {
     ShantellTypewriter,
     NotBitly,
     StickerApp,
-    LiveWire,
     Haikus,
   ];
   const projectCardData = () => {
     return projects.map((project, i) => {
       return (
-        <Grid xs={12} md={6} lg={4} xl={3} key={i}>
+        <Grid xs={12} md={6} lg={4} key={i}>
           <ProjectCard
             description={project.description}
             githubLink={project.githubLink}
@@ -40,7 +38,9 @@ function Projects() {
   return (
     <Grid container flexDirection="column" id="projects-grid">
       <Grid>
-        <Typography variant="h1">Personal Projects</Typography>
+        <Typography variant="h1" sx={{ textAlign: "left" }}>
+          Personal Projects
+        </Typography>
       </Grid>
       <Grid container spacing={3}>
         {projectCardData()}

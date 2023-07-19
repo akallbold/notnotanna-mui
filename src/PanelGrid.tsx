@@ -1,6 +1,5 @@
 import "./App.css";
 import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
 import Grid from "@mui/material/Unstable_Grid2"; // Grid version 2
 
 interface PanelGridProps {
@@ -9,7 +8,7 @@ interface PanelGridProps {
 }
 
 function PanelGrid(props: PanelGridProps) {
-  const { children, text, ...other } = props;
+  const { children, text } = props;
 
   return (
     <Grid

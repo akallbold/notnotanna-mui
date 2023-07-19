@@ -1,15 +1,14 @@
-import Grid from "@mui/material/Unstable_Grid2"; // Grid version 2
 import Carousel from "react-material-ui-carousel";
 import { Gateway, GoogleGlass, IOT, MagicLeap, TBL } from "../../data/pictures";
 import { useEffect, useState } from "react";
 import PictureItemLarge from "../../PictureItemLarge";
 import PictureItemSmall from "../../PictureItemSmall";
-import useLanguage from "../../hooks/useLanguage";
+// import useLanguage from "../../hooks/useLanguage";
 
 const items = [Gateway, GoogleGlass, IOT, MagicLeap, TBL];
 function Pictures() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const { language } = useLanguage();
+  // const { language } = useLanguage();
   useEffect(() => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
@@ -21,12 +20,7 @@ function Pictures() {
     };
   }, []);
   return (
-    // <Grid
-    //   id="grid-above-carosel"
-    //   flexDirection="row"
-    // >
     <Carousel
-      // height="50vh"
       interval={8000}
       navButtonsAlwaysInvisible={windowWidth > 800 ? false : true}
     >
@@ -39,6 +33,7 @@ function Pictures() {
               description={item.description["en"]}
               date={item.date}
               imgAlt={item.imgAlt}
+              experience={item.experience}
             />
           );
         return (
@@ -52,7 +47,6 @@ function Pictures() {
         );
       })}
     </Carousel>
-    // </Grid>
   );
 }
 
