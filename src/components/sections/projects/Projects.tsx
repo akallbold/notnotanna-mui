@@ -6,8 +6,8 @@ import {
   StickerApp,
   NotBitly,
   AdvancedChatGPT,
-} from "../../data/projects";
-import ProjectCard from "../../ProjectCard";
+} from "../../../data/projects";
+import ProjectCard from "./ProjectCard";
 import { rgbToHex } from "@mui/material";
 
 function Projects() {

@@ -1,8 +1,14 @@
 import Carousel from "react-material-ui-carousel";
-import { Gateway, GoogleGlass, IOT, MagicLeap, TBL } from "../../data/pictures";
+import {
+  Gateway,
+  GoogleGlass,
+  IOT,
+  MagicLeap,
+  TBL,
+} from "../../../data/pictures";
 import { useEffect, useState } from "react";
-import PictureItemLarge from "../../PictureItemLarge";
-import PictureItemSmall from "../../PictureItemSmall";
+import PictureItemLarge from "./PictureItemLarge";
+import PictureItemSmall from "../../../PictureItemSmall";
 // import useLanguage from "../../hooks/useLanguage";
 
 const items = [Gateway, GoogleGlass, IOT, MagicLeap, TBL];

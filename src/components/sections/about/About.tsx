@@ -1,7 +1,7 @@
-import AboutLarge from "../../AboutLarge";
-import AboutSmall from "../../AboutSmall";
+import AboutLarge from "../../../AboutLarge";
+import AboutSmall from "../../../AboutSmall";
 // import useLanguage from "../../hooks/useLanguage";
-import { text } from "../../data/text";
+import { text } from "../../../data/text";
 import { useEffect, useState } from "react";
 import Grid from "@mui/material/Unstable_Grid2"; // Grid version 2
 
