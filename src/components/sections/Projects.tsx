@@ -8,6 +8,7 @@ import {
   AdvancedChatGPT,
 } from "../../data/projects";
 import ProjectCard from "../../ProjectCard";
+import { rgbToHex } from "@mui/material";
 
 function Projects() {
   const projects = [
@@ -36,9 +37,13 @@ function Projects() {
   };
 
   return (
-    <Grid container flexDirection="column" id="projects-grid">
-      <Grid>
-        <Typography variant="h1" sx={{ textAlign: "left" }}>
+    <Grid
+      container
+      flexDirection="column"
+      sx={{ backgroundColor: "rgba(237, 181, 180, 0.3)" }}
+    >
+      <Grid px={3} py={3}>
+        <Typography variant="h2" sx={{ textAlign: "left" }}>
           Personal Projects
         </Typography>
       </Grid>

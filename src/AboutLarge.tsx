@@ -25,9 +25,9 @@ function AboutLarge(data: any) {
   };
 
   return (
-    <Grid container id="about-large-grid">
+    <Grid container id="about-large-grid" px={3} py={3}>
       <Box>
-        <Typography variant="h1">About Me</Typography>
+        <Typography variant="h2">About Me</Typography>
       </Box>
       <Box
         sx={{

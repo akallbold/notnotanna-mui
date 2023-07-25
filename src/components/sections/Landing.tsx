@@ -3,8 +3,27 @@ import Typography from "@mui/material/Typography";
 
 function Landing() {
   return (
-    <Grid container sx={{ height: "50vh" }} id="landing-grid">
-      <Typography variant="h1">Landing</Typography>
+    <Grid
+      container
+      sx={{
+        height: "50vh",
+        backgroundColor: "#EDB5B4",
+        width: "100%",
+        justifyContent: "center",
+        alignContent: "center",
+      }}
+    >
+      <Grid
+        sx={{
+          width: "40%",
+        }}
+      >
+        <Typography variant="h1">
+          Hi! I am Anna, a fullstack engineer with a background as a project
+          manager and product manager. Welcome to my site.
+        </Typography>
+      </Grid>
+
       {/* generate AI image and put here */}
     </Grid>
   );

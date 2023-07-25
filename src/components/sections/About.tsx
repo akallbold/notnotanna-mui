@@ -3,6 +3,7 @@ import AboutSmall from "../../AboutSmall";
 // import useLanguage from "../../hooks/useLanguage";
 import { text } from "../../data/text";
 import { useEffect, useState } from "react";
+import Grid from "@mui/material/Unstable_Grid2"; // Grid version 2
 
 function About() {
   // const { language } = useLanguage();

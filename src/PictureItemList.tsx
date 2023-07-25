@@ -8,15 +8,8 @@ import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import DownhillSkiingIcon from "@mui/icons-material/DownhillSkiing";
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
-function generate(element: React.ReactElement) {
-  return [0, 1, 2].map((value) =>
-    React.cloneElement(element, {
-      key: value,
-    })
-  );
-}
 
-export default function PictureItemList(item: any) {
+export default function PictureItemList(arrayOfExperiences: any) {
   const iconMapper = (iconText: string) => {
     switch (iconText) {
       case "DownhillSkiingIcon":
@@ -25,6 +18,14 @@ export default function PictureItemList(item: any) {
         return <FiberManualRecordIcon />;
     }
   };
+  function generateElements() {
+    return [arrayOfExperiences].map((item, i) => (
+      <ListItem key={i}>
+        <ListItemIcon>{iconMapper(item.icon)}</ListItemIcon>
+        <ListItemText primary={item.text} />
+      </ListItem>
+    ));
+  }
   return (
     <Box sx={{ flexGrow: 1, maxWidth: 752 }}>
       <Grid container spacing={2}>
@@ -32,14 +33,7 @@ export default function PictureItemList(item: any) {
           <Typography sx={{ mt: 4, mb: 2 }} variant="h6" component="div">
             Experiences picked up
           </Typography>
-          <List dense>
-            {generate(
-              <ListItem>
-                <ListItemIcon>{iconMapper("")}</ListItemIcon>
-                <ListItemText primary="Single-line item" />
-              </ListItem>
-            )}
-          </List>
+          <List dense>{generateElements()}</List>
         </Grid>
       </Grid>
     </Box>

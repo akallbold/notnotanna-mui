@@ -61,7 +61,7 @@ export const theme = createTheme({
     },
   },
   palette: {
-       primary: {
+    primary: {
       main: '#EDB5B4', // tea rose
       dark:"#074F57" // midnight green
     },
@@ -80,14 +80,14 @@ export const theme = createTheme({
     h1: {
       fontSize: 34,
       fontWeight: 800,
-      color: "#074F57",
-      paddingBottom: '8px',
+      color: "#FFF",
+      fontFamily:"Shantell Sans",
+      textAlign:'center'
     },
     h2: {
       color: "#074F57",
-      fontSize: 24,
+      fontSize: 34,
       fontWeight: 800,
-      lineHeight: 1.375,
       paddingBottom: '8px',
     },
     h3: {
@@ -125,7 +125,6 @@ export const theme = createTheme({
       fontSize: 14,
       fontWeight: 700,
       color:"#074F57",
-    },
-    fontFamily: `'Open Sans', sans-serif`,
+    },  
   },
 });
