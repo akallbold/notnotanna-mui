@@ -5,8 +5,6 @@ import About from "./components/sections/about/About";
 import Projects from "./components/sections/projects/Projects";
 import Pictures from "./components/sections/pictures/Pictures";
 import Header from "./components/sections/Header";
-
-import { Divider } from "@mui/material";
 import Landing from "./components/sections/Landing";
 import Footer from "./components/sections/Footer";
 function App() {
@@ -26,30 +24,18 @@ function App() {
 
   return (
     <div className="App">
-      <Grid container id="entire-app-grid">
+      <Grid container id="entire-app-grid" flexDirection="column">
         <Header scrollToSection={scrollToSection} />
         <Landing />
-        <Grid flexDirection="column">
-          <div ref={about} className="about">
-            <About />
-          </div>
-          {/* <Divider /> */}
-          <div
-            ref={projects}
-            className="projects"
-            style={{ padding: "24px 0px" }}
-          >
-            <Projects />
-          </div>
-          {/* <Divider /> */}
-          <div
-            ref={pictures}
-            className="pictures"
-            style={{ padding: "24px 0px" }}
-          >
-            <Pictures />
-          </div>
-        </Grid>
+        <div ref={about} className="about">
+          <About />
+        </div>
+        <div ref={projects} className="projects">
+          <Projects />
+        </div>
+        <div ref={pictures} className="pictures">
+          <Pictures />
+        </div>
         <Footer />
       </Grid>
     </div>

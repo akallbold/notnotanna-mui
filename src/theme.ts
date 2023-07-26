@@ -39,14 +39,15 @@ export const theme = createTheme({
         },
       },
     },
-    MuiButton: {
-      styleOverrides: {
-        root: {
-          height: 52,
-          borderRadius: 10,
-        },
-      },
-    },
+    // MuiButton: {
+    //   styleOverrides: {
+    //     root: {
+    //       height: 52,
+    //       borderRadius: 10,
+    //       color:'secondary.main'
+    //     },
+    //   },
+    // },
     MuiLink: {
       styleOverrides: {
         root: {

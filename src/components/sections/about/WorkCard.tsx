@@ -6,7 +6,7 @@ import CardActions from "@mui/material/CardActions";
 import IconButton from "@mui/material/IconButton";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
-type IProjectCard = {
+type IWorkCard = {
   description: string;
   githubLink?: string;
   img: string;
@@ -14,7 +14,7 @@ type IProjectCard = {
   link?: string;
   title: string;
 };
-const ProjectCard: React.FunctionComponent<IProjectCard> = ({
+const WorkCard: React.FunctionComponent<IWorkCard> = ({
   description,
   img,
   imgAlt,
@@ -52,4 +52,4 @@ const ProjectCard: React.FunctionComponent<IProjectCard> = ({
   );
 };
 
-export default ProjectCard;
+export default WorkCard;

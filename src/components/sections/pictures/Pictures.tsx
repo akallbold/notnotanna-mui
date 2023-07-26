@@ -8,7 +8,7 @@ import {
 } from "../../../data/pictures";
 import { useEffect, useState } from "react";
 import PictureItemLarge from "./PictureItemLarge";
-import PictureItemSmall from "../../../PictureItemSmall";
+import PictureItemSmall from "./PictureItemSmall";
 // import useLanguage from "../../hooks/useLanguage";
 
 const items = [Gateway, GoogleGlass, IOT, MagicLeap, TBL];

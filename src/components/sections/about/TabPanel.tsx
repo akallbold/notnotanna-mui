@@ -1,4 +1,3 @@
-import "./App.css";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 
@@ -20,7 +19,7 @@ function TabPanel(props: TabPanelProps) {
       {...other}
     >
       {value === index && (
-        <Box sx={{ px: 3 }}>
+        <Box px={3} py={3}>
           <Typography>{children}</Typography>
         </Box>
       )}

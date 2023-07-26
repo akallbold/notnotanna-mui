@@ -7,7 +7,7 @@ function Landing() {
       container
       sx={{
         height: "50vh",
-        backgroundColor: "#EDB5B4",
+        backgroundColor: "primary.main",
         width: "100%",
         justifyContent: "center",
         alignContent: "center",

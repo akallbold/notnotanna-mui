@@ -1,9 +1,7 @@
-import AboutLarge from "../../../AboutLarge";
-import AboutSmall from "../../../AboutSmall";
-// import useLanguage from "../../hooks/useLanguage";
 import { text } from "../../../data/text";
 import { useEffect, useState } from "react";
-import Grid from "@mui/material/Unstable_Grid2"; // Grid version 2
+import AboutLarge from "./AboutLarge";
+// import AboutSmall from "./AboutSmall";
 
 function About() {
   // const { language } = useLanguage();
@@ -21,7 +19,8 @@ function About() {
   }, []);
   const data = text.en;
   if (windowWidth > 800) return <AboutLarge data={data} />;
-  return <AboutSmall data={data} />;
+  // return <AboutSmall data={data} />;
+  return <AboutLarge data={data} />;
 }
 
 export default About;
