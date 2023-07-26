@@ -1,16 +1,19 @@
-import Grid from "@mui/material/Unstable_Grid2"; // Grid version 2
-import Typography from "@mui/material/Typography";
+import Carousel from "react-material-ui-carousel";
+import { useEffect, useState } from "react";
+import ProjectViewLarge from "./ProjectViewLarge";
 import {
-  Haikus,
-  ShantellTypewriter,
-  StickerApp,
-  NotBitly,
   AdvancedChatGPT,
+  ShantellTypewriter,
+  NotBitly,
+  StickerApp,
+  Haikus,
 } from "../../../data/projects";
-import ProjectCard from "./ProjectCard";
-import { rgbToHex } from "@mui/material";
+import Grid from "@mui/material/Unstable_Grid2"; // Grid version 2
+import { Typography } from "@mui/material";
+import LargeSection from "../LargeSection";
 
 function Projects() {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const projects = [
     AdvancedChatGPT,
     ShantellTypewriter,
@@ -18,39 +21,41 @@ function Projects() {
     StickerApp,
     Haikus,
   ];
-  const projectCardData = () => {
-    return projects.map((project, i) => {
-      return (
-        <Grid xs={12} md={6} lg={4} key={i}>
-          <ProjectCard
-            description={project.description}
-            githubLink={project.githubLink}
-            key={project.title}
-            img={project.img}
-            imgAlt={project.imgAlt}
-            link={project.link}
-            title={project.title}
-          />
-        </Grid>
-      );
-    });
-  };
+  // const { language } = useLanguage();
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
-    <Grid
-      container
-      flexDirection="column"
-      sx={{ backgroundColor: "rgba(237, 181, 180, 0.3)" }}
-    >
-      <Grid px={3} py={3}>
-        <Typography variant="h2" sx={{ textAlign: "left" }}>
-          Personal Projects
-        </Typography>
+    <LargeSection fullWidth>
+      <Grid
+        container
+        flexDirection="column"
+        sx={{ backgroundColor: "rgba(237, 181, 180, 0.3)", width: "100%" }}
+      >
+        <Grid py={3}>
+          <Typography variant="h2">Personal Projects</Typography>
+        </Grid>
+        <Carousel
+          interval={80000}
+          navButtonsAlwaysInvisible={windowWidth > 800 ? false : true}
+          navButtonsAlwaysVisible={windowWidth > 800 ? true : false}
+        >
+          {projects.map((project, i) => {
+            if (windowWidth > 800)
+              return <ProjectViewLarge project={project} key={i} />;
+            return <ProjectViewLarge project={project} key={i} />;
+          })}
+        </Carousel>
       </Grid>
-      <Grid container spacing={3}>
-        {projectCardData()}
-      </Grid>
-    </Grid>
+    </LargeSection>
   );
 }
 

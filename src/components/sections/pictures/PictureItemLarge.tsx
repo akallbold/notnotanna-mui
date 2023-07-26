@@ -1,6 +1,6 @@
 import Grid from "@mui/material/Unstable_Grid2"; // Grid version 2
 import Typography from "@mui/material/Typography";
-import PictureItemList from "./PictureItemList";
+import { Card, CardContent, CardMedia } from "@mui/material";
 
 type IPictureItem = {
   description: string;
@@ -15,34 +15,21 @@ const PictureItemLarge: React.FunctionComponent<IPictureItem> = ({
   description,
   date,
   imgAlt,
-  experience,
 }) => {
   return (
-    <Grid
-      container
-      flexDirection="row"
-      // justifyContent="center"
-      id="grid-1"
-      // sx={{ backgroundColor: "yellow" }}
-    >
-      <Grid container sx={{ width: "50%" }} flexDirection="column">
-        <Grid sx={{ backgroundColor: "red", width: "100%" }} id="grid-2">
-          <img
-            src={img}
-            alt={imgAlt}
-            style={{ width: "100%", height: "100%" }}
-          />
-        </Grid>
-        <Grid id="grid-3">
-          <Typography
-            variant="caption"
-            sx={{ textAlign: "left" }}
-          >{`Circa: ${date}`}</Typography>
-        </Grid>
+    <Grid container px={2}>
+      <Grid sx={{ width: "50%" }}>
+        <Card sx={{ maxWidth: 345 }}>
+          <CardMedia component="img" alt={imgAlt} height="240" image={img} />
+          <CardContent>
+            <Typography gutterBottom variant="caption">
+              {`Circa: ${date}`}
+            </Typography>
+          </CardContent>
+        </Card>
       </Grid>
-      <Grid id="grid-4" sx={{ width: "50%" }} px={2}>
+      <Grid sx={{ width: "50%" }}>
         <Typography variant="body2">{description}</Typography>
-        <PictureItemList experience={experience} />
       </Grid>
     </Grid>
   );

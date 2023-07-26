@@ -24,7 +24,7 @@ function App() {
 
   return (
     <div className="App">
-      <Grid container id="entire-app-grid" flexDirection="column">
+      <Grid container flexDirection="column">
         <Header scrollToSection={scrollToSection} />
         <Landing />
         <div ref={about} className="about">
