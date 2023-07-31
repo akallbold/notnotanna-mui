@@ -4,15 +4,17 @@ import {
   GoogleGlass,
   IOT,
   MagicLeap,
+  MacIcon,
   TBL,
 } from "../../../data/pictures";
 import { useEffect, useState } from "react";
 import PictureItemLarge from "./PictureItemLarge";
 import PictureItemSmall from "./PictureItemSmall";
 import Grid from "@mui/material/Unstable_Grid2"; // Grid version 2
+import { Typography } from "@mui/material";
 // import useLanguage from "../../hooks/useLanguage";
 
-const items = [Gateway, GoogleGlass, IOT, MagicLeap, TBL];
+const items = [Gateway, GoogleGlass, IOT, MagicLeap, MacIcon, TBL];
 
 function Pictures() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -32,6 +34,7 @@ function Pictures() {
       justifyContent="center"
       alignContent="center"
     >
+      <Typography variant="h2">Just for Fun</Typography>
       <Carousel
         interval={8000}
         navButtonsAlwaysInvisible={windowWidth > 800 ? false : true}
@@ -47,7 +50,6 @@ function Pictures() {
                 description={item.description["en"]}
                 date={item.date}
                 imgAlt={item.imgAlt}
-                experience={item.experience}
               />
             );
           return (

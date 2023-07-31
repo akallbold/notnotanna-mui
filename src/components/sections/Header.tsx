@@ -16,7 +16,7 @@ import { constants } from "../../data/constants";
 const pages = [
   { label: "About Me", elementName: "about" },
   { label: "Projects", elementName: "projects" },
-  { label: "Memory Lane", elementName: "pictures" },
+  { label: "Just for Fun", elementName: "pictures" },
 ];
 
 function Header(props: any) {

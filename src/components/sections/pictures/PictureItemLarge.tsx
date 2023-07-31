@@ -7,7 +7,6 @@ type IPictureItem = {
   img: string;
   imgAlt: string;
   date: string;
-  experience: any;
 };
 
 const PictureItemLarge: React.FunctionComponent<IPictureItem> = ({
@@ -18,17 +17,21 @@ const PictureItemLarge: React.FunctionComponent<IPictureItem> = ({
 }) => {
   return (
     <Grid container px={2}>
-      <Grid sx={{ width: "50%" }}>
-        <Card sx={{ maxWidth: 345 }}>
-          <CardMedia component="img" alt={imgAlt} height="240" image={img} />
+      <Grid sx={{ width: "60%" }} px={2}>
+        <Card>
+          <CardMedia component="img" alt={imgAlt} height="500" image={img} />
           <CardContent>
-            <Typography gutterBottom variant="caption">
-              {`Circa: ${date}`}
+            <Typography
+              gutterBottom
+              variant="caption"
+              style={{ fontFamily: "shantell sans", fontSize: "1.5rem" }}
+            >
+              {`Circa ${date}`}
             </Typography>
           </CardContent>
         </Card>
       </Grid>
-      <Grid sx={{ width: "50%" }}>
+      <Grid sx={{ width: "40%" }} px={2}>
         <Typography variant="body2">{description}</Typography>
       </Grid>
     </Grid>

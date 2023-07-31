@@ -8,11 +8,11 @@ export const Gateway = {
   },
   img: "/images/slideshow/gateway.png",
   imgAlt: "Young Anna playing at the computer.",
-  experience: [
-    { text: "SkiFree", icon: "DownhillSkiingIcon" },
-    { text: "Space Pinball", icon: "" },
-    { text: "Microsoft Bob", icon: "" },
-  ],
+  // experience: [
+  //   { text: "SkiFree", icon: "DownhillSkiingIcon" },
+  //   { text: "Space Pinball", icon: "" },
+  //   { text: "Microsoft Bob", icon: "" },
+  // ],
 };
 
 export const GoogleGlass = {
@@ -25,7 +25,7 @@ export const GoogleGlass = {
   },
   img: "/images/slideshow/google-glass.jpg",
   imgAlt: "Anna loving the Google Glasses.",
-  experience: [],
+  // experience: [],
 };
 
 export const IOT = {
@@ -38,11 +38,11 @@ export const IOT = {
   },
   img: "/images/slideshow/iot.png",
   imgAlt: "Anna working on IOT things.",
-  experience: [
-    { text: "Azure IOT Hub", icon: "" },
-    { text: "Interstacks", icon: "" },
-    { text: "soldering", icon: "" },
-  ],
+  // experience: [
+  //   { text: "Azure IOT Hub", icon: "" },
+  //   { text: "Interstacks", icon: "" },
+  //   { text: "soldering", icon: "" },
+  // ],
 };
 
 export const MagicLeap = {
@@ -55,10 +55,21 @@ export const MagicLeap = {
   },
   img: "/images/slideshow/magic-leap.png",
   imgAlt: "Anna wearing MagicLeap goggles.",
-  experience: [
-    { text: "MagicLeap", icon: "" },
-    { text: "Unity", icon: "" },
-  ],
+  // experience: [
+  //   { text: "MagicLeap", icon: "" },
+  //   { text: "Unity", icon: "" },
+  // ],
+};
+export const MacIcon = {
+  date: "2020",
+  description: {
+    de: "First time creating AR application using MagicLeap. No one told me I would need to learn Unity.",
+    en: "Big Susan Kare fan. Its incredible what she could fit in a 32x32 pixel grid.",
+    es: "First time creating AR application using MagicLeap. No one told me I would need to learn Unity.",
+    se: "First time creating AR application using MagicLeap. No one told me I would need to learn Unity.",
+  },
+  img: "/images/slideshow/susan-kare.jpg",
+  imgAlt: "Anna holding Susan Kare design.",
 };
 
 export const TBL = {
@@ -71,8 +82,8 @@ export const TBL = {
   },
   img: "/images/slideshow/tbl.png",
   imgAlt: "Anna and Tim Berners Lee.",
-  experience: [
-    { text: "Solid", icon: "" },
-    { text: "Development without Stackoverflow", icon: "" },
-  ],
+  // experience: [
+  //   { text: "Solid", icon: "" },
+  //   { text: "Development without Stackoverflow", icon: "" },
+  // ],
 };
