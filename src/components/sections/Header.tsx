@@ -9,9 +9,6 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import { constants } from "../../data/constants";
 
 const pages = [
   { label: "About Me", elementName: "about" },
@@ -86,8 +83,8 @@ function Header(props: any) {
                 <MenuItem
                   key={page.label}
                   onClick={() => {
-                    console.log({ page });
                     scrollToSection(page.elementName);
+                    handleCloseNavMenu();
                   }}
                 >
                   <Typography textAlign="center">{page.label}</Typography>
@@ -125,26 +122,6 @@ function Header(props: any) {
                 {page.label}
               </Button>
             ))}
-            <GitHubIcon
-              onClick={() => window.open(constants.githubUrl, "_blank")}
-              sx={{
-                my: 2,
-                mx: 2,
-                color: "white",
-                display: "block",
-                alignSelf: "center",
-              }}
-            />
-            <LinkedInIcon
-              onClick={() => window.open(constants.linkedinURL, "_blank")}
-              sx={{
-                my: 2,
-                mx: 2,
-                color: "white",
-                display: "block",
-                alignSelf: "center",
-              }}
-            />
           </Box>
         </Toolbar>
       </Container>

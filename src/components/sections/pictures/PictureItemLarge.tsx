@@ -16,8 +16,8 @@ const PictureItemLarge: React.FunctionComponent<IPictureItem> = ({
   imgAlt,
 }) => {
   return (
-    <Grid container px={2}>
-      <Grid sx={{ width: "60%" }} px={2}>
+    <Grid container px={3} py={3}>
+      <Grid sx={{ width: "60%" }} px={3}>
         <Card>
           <CardMedia component="img" alt={imgAlt} height="500" image={img} />
           <CardContent>
@@ -31,7 +31,7 @@ const PictureItemLarge: React.FunctionComponent<IPictureItem> = ({
           </CardContent>
         </Card>
       </Grid>
-      <Grid sx={{ width: "40%" }} px={2}>
+      <Grid sx={{ width: "40%" }} px={3}>
         <Typography variant="body2">{description}</Typography>
       </Grid>
     </Grid>

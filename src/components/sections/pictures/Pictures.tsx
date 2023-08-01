@@ -30,9 +30,10 @@ function Pictures() {
   }, []);
   return (
     <Grid
-      sx={{ minHeight: "75vh" }}
+      sx={{ minHeight: windowWidth < 800 ? "75vh" : "100vh" }}
       justifyContent="center"
       alignContent="center"
+      py={3}
     >
       <Typography variant="h2">Just for Fun</Typography>
       <Carousel

@@ -34,7 +34,7 @@ function Projects() {
   }, []);
 
   return (
-    <LargeSection fullWidth>
+    <LargeSection fullWidth fullHeight>
       <Grid
         container
         flexDirection="column"

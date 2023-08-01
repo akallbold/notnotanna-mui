@@ -17,7 +17,7 @@ type IProjectCardProps = {
 
 const ProjectViewLarge = ({ project }: IProjectCardProps) => {
   return (
-    <Grid container flexDirection="row" px={2} justifyContent="space-evenly">
+    <Grid container flexDirection="row" px={3} justifyContent="space-evenly">
       <Grid container sx={{ width: "40%", alignContent: "center" }}>
         <Typography variant="h2" sx={{ textAlign: "left" }}>
           {project.title}
