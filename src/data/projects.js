@@ -9,16 +9,6 @@ export const ErrorPages = {
   githubLink: "",
 };
 
-export const LiveWire = {
-  description:
-    "I worked on the livewire launch on a professional project. The site was (almost) purely frontend and was a great opportunity to work with Angular and the Greensock animation library.",
-  title: "LiveWire Homepage",
-  link: constants.livewireURL,
-  img: "/images/livewire-homepage.png",
-  imgAlt: "livewire homepage",
-  githubLink: "",
-};
-
 export const Haikus = {
   description:
     "Meditations is not only a great book, but a wonderful source of rich vocabulary. I used the text from the book and algorithms to programatically determine the number of syllabuls in each word. The program then creates haikus based on this word set. ",
@@ -87,4 +77,14 @@ export const Intermountain = {
   imgAlt: "screenshot of intermountain my health app",
   githubLink: "",
   link: "https://apps.apple.com/us/app/my-health-by-intermountain/id1454432442",
+};
+
+export const LiveWire = {
+  description:
+    "I worked on the livewire launch on a professional project. The site was (almost) purely frontend and was a great opportunity to work with Angular and the Greensock animation library.",
+  title: "LiveWire Homepage",
+  link: constants.livewireURL,
+  img: "/images/livewire-homepage.png",
+  imgAlt: "livewire homepage",
+  githubLink: "",
 };

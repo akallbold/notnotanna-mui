@@ -13,7 +13,7 @@ function PanelGrid(props: PanelGridProps) {
       justifyContent="center"
       sx={{
         width: "100%",
-        flexWrap: "nowrap",
+        // flexWrap: "nowrap",
       }}
     >
       {children}

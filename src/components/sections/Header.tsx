@@ -21,8 +21,6 @@ const pages = [
 
 function Header(props: any) {
   const { scrollToSection } = props;
-
-  console.log({ scrollToSection });
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
     null
   );

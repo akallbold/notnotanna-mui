@@ -6,7 +6,6 @@ interface ILargeSectionProps {
   fullWidth?: boolean;
   fullHeight?: boolean;
   style?: React.CSSProperties;
-  // backgroundColor?: string;
 }
 
 export default function LargeSection(props: ILargeSectionProps) {
