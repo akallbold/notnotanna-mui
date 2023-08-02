@@ -1,6 +1,6 @@
 import Carousel from "react-material-ui-carousel";
 import { useEffect, useState } from "react";
-import ProjectViewLarge from "./ProjectViewLarge";
+import ProjectViewLarge from "./ProjectView";
 import {
   AdvancedChatGPT,
   ShantellTypewriter,
@@ -11,9 +11,9 @@ import {
 import Grid from "@mui/material/Unstable_Grid2"; // Grid version 2
 import { Typography } from "@mui/material";
 import LargeSection from "../LargeSection";
+import useIsMobile from "../../../hooks/useIsMobile";
 
 function Projects() {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const projects = [
     AdvancedChatGPT,
     ShantellTypewriter,
@@ -21,17 +21,7 @@ function Projects() {
     StickerApp,
     Haikus,
   ];
-
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  const isMobile = useIsMobile();
 
   return (
     <LargeSection fullWidth fullHeight>
@@ -45,17 +35,17 @@ function Projects() {
         }}
         py={3}
       >
-        <Grid sx={{ paddingBottom: 3 }}>
+        <Grid sx={{ paddingBottom: isMobile ? 6 : 3 }}>
+          {/* <Grid sx={{ paddingBottom: 3 }}> */}
           <Typography variant="h2">Personal Projects</Typography>
         </Grid>
         <Carousel
           interval={100000}
           navButtonsAlwaysVisible
-          height={windowWidth > 768 ? "70vh" : "100vh"}
+          // height={isMobile ? "80vh" : "70vh"}
+          height="80vh"
         >
           {projects.map((project, i) => {
-            if (windowWidth > 768)
-              return <ProjectViewLarge project={project} key={i} />;
             return <ProjectViewLarge project={project} key={i} />;
           })}
         </Carousel>

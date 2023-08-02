@@ -1,5 +1,6 @@
 import Grid from "@mui/material/Unstable_Grid2"; // Grid version 2
 import Typography from "@mui/material/Typography";
+import useIsMobile from "../../../hooks/useIsMobile";
 
 type IProjectCard = {
   description: string;
@@ -15,15 +16,21 @@ type IProjectCardProps = {
 };
 
 const ProjectViewLarge = ({ project }: IProjectCardProps) => {
+  const isMobile = useIsMobile();
   return (
     <Grid
       container
-      flexDirection="row"
+      flexDirection={isMobile ? "column" : "row"}
       px={3}
-      justifyContent="space-evenly"
+      justifyContent={isMobile ? "start" : "space-evenly"}
       sx={{ height: "100%" }}
     >
-      <Grid container sx={{ width: "40%" }} flexDirection="column" spacing={1}>
+      <Grid
+        container
+        sx={{ width: isMobile ? "100%" : "40%" }}
+        flexDirection="column"
+        spacing={1}
+      >
         <Grid>
           <Typography variant="subtitle1">{project.subtitle}</Typography>
           <Typography variant="h3" align="left" gutterBottom>
@@ -52,7 +59,7 @@ const ProjectViewLarge = ({ project }: IProjectCardProps) => {
           )}
         </Grid>
       </Grid>
-      <Grid sx={{ width: "40%" }}>
+      <Grid sx={{ width: isMobile ? "100%" : "40%" }}>
         <img src={project.img} alt={project.imgAlt} height="90%" width="90%" />
       </Grid>
     </Grid>
