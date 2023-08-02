@@ -21,7 +21,7 @@ function Projects() {
     StickerApp,
     Haikus,
   ];
-  // const { language } = useLanguage();
+
   useEffect(() => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
@@ -45,14 +45,13 @@ function Projects() {
         }}
         py={3}
       >
-        {/* <Grid sx={{ paddingBottom: "2rem" }}> */}
         <Grid sx={{ paddingBottom: 3 }}>
-          <Typography variant="h3">Personal Projects</Typography>
+          <Typography variant="h2">Personal Projects</Typography>
         </Grid>
         <Carousel
-          interval={80000}
-          // navButtonsAlwaysInvisible={windowWidth > 768 ? false : true}
+          interval={100000}
           navButtonsAlwaysVisible
+          height={windowWidth > 768 ? "70vh" : "100vh"}
         >
           {projects.map((project, i) => {
             if (windowWidth > 768)

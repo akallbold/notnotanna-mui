@@ -38,7 +38,7 @@ function Pictures() {
       alignContent="center"
       py={3}
     >
-      <Typography variant="h3">Just for Fun</Typography>
+      <Typography variant="h2">Just for Fun</Typography>
       <Carousel
         interval={8000}
         navButtonsAlwaysInvisible={windowWidth > 768 ? false : true}

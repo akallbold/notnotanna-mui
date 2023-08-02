@@ -55,7 +55,7 @@ export default function AboutLarge(data: any) {
     <LargeSection fullWidth fullHeight>
       <Grid sx={{ backgroundColor: "rgba(19,106,97,0.04)" }}>
         <Grid py={3}>
-          <Typography variant="h3">About Me</Typography>
+          <Typography variant="h2">About Me</Typography>
         </Grid>
         <Grid>
           <Tabs
@@ -76,6 +76,7 @@ export default function AboutLarge(data: any) {
               },
               overflow: "visible",
               // TODO: add a different color for selected
+              color: "secondary.dark",
             }}
           >
             <Tab label="Work" {...a11yProps(0)} />

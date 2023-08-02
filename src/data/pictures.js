@@ -36,7 +36,7 @@ export const IOT = {
     es: "Working on IOT sensors using Interstacks and Azure.",
     se: "Working on IOT sensors using Interstacks and Azure.",
   },
-  img: "/images/slideshow/iot.png",
+  img: "/images/slideshow/iot.jpg",
   imgAlt: "Anna working on IOT things.",
   // experience: [
   //   { text: "Azure IOT Hub", icon: "" },

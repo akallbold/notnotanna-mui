@@ -63,6 +63,7 @@ export const theme = createTheme({
   palette: {
     primary: {
       main: '#F7D4C7', // pink
+      dark: '#ac948b', // dark pink for subtitle1
     },
     secondary: {
       main: '#136A61', // green
@@ -75,22 +76,23 @@ export const theme = createTheme({
     divider: '#00000050',
   },
   typography: {
-    h1: {
+    h1: { // AKB LOGO
       fontSize: 34,
       fontWeight: 800,
       fontFamily:"Shantell Sans",
       textAlign:'center',
       color: "#136A61",
     },
-    h2: {
+    h2: { // SECTION TITLES
       color: "#136A61",
       fontSize: 34,
-      fontWeight: 800,
+      fontWeight: 700,
     },
-    h3: { // dupe of h2 for now
+    h3: { 
       color:"#136A61",
-      fontSize: 34,
-      fontWeight: 800,
+      fontSize: 30,
+      fontWeight: 900,
+      // textDecoration: 'underline',
     },
     h4: {
       color:"#136A61",
@@ -116,20 +118,24 @@ export const theme = createTheme({
       fontWeight: 800,
       textAlign:'left'
     },
-    // button: {
-    //   fontWeight: 800,
-    //   color:"#136A61",
-    //   textTransform: 'capitalize',
-    // },
+    button: {
+      color:"#136A61",
+      textTransform: 'capitalize',
+      textAlign:'left',
+      textDecoration:"underline"
+    },
     caption: {
       fontSize: 12,
       color:"#136A61"
     },
-    // subtitle1: {
-    //   fontSize: 14,
-    //   fontWeight: 700,
-    //   color:"#136A61",
-    // },  
+    subtitle1: {
+      fontSize: 14,
+      fontWeight: 700,
+      color:'#ac948b',
+      textAlign: "left",
+      letterSpacing: "2px",
+      textTransform:"uppercase"
+    },  
     fontFamily: 'Cormorant, serif',
     
   },
