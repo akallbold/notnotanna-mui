@@ -38,18 +38,24 @@ function Projects() {
       <Grid
         container
         flexDirection="column"
-        sx={{ backgroundColor: "rgba(237, 181, 180, 0.3)", width: "100%" }}
+        sx={{
+          backgroundColor: "rgba(248,212,197, 0.3)",
+          width: "100%",
+          height: "100%",
+        }}
+        py={3}
       >
-        <Grid py={3}>
-          <Typography variant="h2">Personal Projects</Typography>
+        {/* <Grid sx={{ paddingBottom: "2rem" }}> */}
+        <Grid sx={{ paddingBottom: 3 }}>
+          <Typography variant="h3">Personal Projects</Typography>
         </Grid>
         <Carousel
           interval={80000}
-          navButtonsAlwaysInvisible={windowWidth > 800 ? false : true}
-          navButtonsAlwaysVisible={windowWidth > 800 ? true : false}
+          // navButtonsAlwaysInvisible={windowWidth > 768 ? false : true}
+          navButtonsAlwaysVisible
         >
           {projects.map((project, i) => {
-            if (windowWidth > 800)
+            if (windowWidth > 768)
               return <ProjectViewLarge project={project} key={i} />;
             return <ProjectViewLarge project={project} key={i} />;
           })}

@@ -30,20 +30,23 @@ function Pictures() {
   }, []);
   return (
     <Grid
-      sx={{ minHeight: windowWidth < 800 ? "75vh" : "100vh" }}
+      sx={{
+        backgroundColor: "rgba(19,106,97,0.04)",
+        minHeight: windowWidth < 800 ? "75vh" : "100vh",
+      }}
       justifyContent="center"
       alignContent="center"
       py={3}
     >
-      <Typography variant="h2">Just for Fun</Typography>
+      <Typography variant="h3">Just for Fun</Typography>
       <Carousel
         interval={8000}
-        navButtonsAlwaysInvisible={windowWidth > 800 ? false : true}
-        navButtonsAlwaysVisible={windowWidth > 800 ? true : false}
+        navButtonsAlwaysInvisible={windowWidth > 768 ? false : true}
+        navButtonsAlwaysVisible={windowWidth > 768 ? true : false}
         height="75vh"
       >
         {items.map((item, i) => {
-          if (windowWidth > 800)
+          if (windowWidth > 768)
             return (
               <PictureItemLarge
                 key={i}

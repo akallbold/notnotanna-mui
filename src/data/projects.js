@@ -14,7 +14,7 @@ export const Haikus = {
     "Meditations is not only a great book, but a wonderful source of rich vocabulary. I used the text from the book and algorithms to programatically determine the number of syllabuls in each word. The program then creates haikus based on this word set. ",
   title: "Marcus Aurelius Haiku Generator",
   link: "/meditations",
-  img: "/images/marcus.jpg",
+  img: "/images/marcus.jpeg",
   imgAlt: "Marcus Aurelius",
   githubLink: "",
 };

@@ -1,6 +1,5 @@
 import { createTheme } from '@mui/material/styles';
 
-
 export const theme = createTheme({
   components: {
     MuiFilledInput: {
@@ -63,12 +62,10 @@ export const theme = createTheme({
   },
   palette: {
     primary: {
-      main: '#EDB5B4', // tea rose
-      dark:"#074F57" // midnight green
+      main: '#F7D4C7', // pink
     },
     secondary: {
-      main: '#2A6EBB', // celtic blue
-      dark: '#0C1B33', // oxford blue
+      main: '#136A61', // green
     },
 
     text: {
@@ -81,51 +78,59 @@ export const theme = createTheme({
     h1: {
       fontSize: 34,
       fontWeight: 800,
-      color: "#FFF",
       fontFamily:"Shantell Sans",
-      textAlign:'center'
+      textAlign:'center',
+      color: "#136A61",
     },
     h2: {
-      color: "#074F57",
+      color: "#136A61",
       fontSize: 34,
       fontWeight: 800,
-      paddingBottom: '8px',
     },
-    h3: {
+    h3: { // dupe of h2 for now
+      color:"#136A61",
+      fontSize: 34,
       fontWeight: 800,
-      fontSize: 20,
-      color: "#074F57",
     },
     h4: {
+      color:"#136A61",
       fontSize: 16,
       fontWeight: 700,
-      color: "#074F57",
     },
+    h5: {
+      color:"#136A61"
+    },   
+    // h6: {
+    //   color:"#136A61"
+    // },
     body1: {
+      color:"#136A61",
       fontSize: 16,
-      color: "#074F57",
       fontWeight: 400,
       lineHeight: 1.625,
+      textAlign:'left'
     },
     body2: {
+      color:"#136A61",
       fontSize: 16,
-      color: "#074F57",
       fontWeight: 800,
       textAlign:'left'
     },
-    button: {
-      fontWeight: 800,
-      color: '#1B1B1B',
-      textTransform: 'capitalize',
-    },
+    // button: {
+    //   fontWeight: 800,
+    //   color:"#136A61",
+    //   textTransform: 'capitalize',
+    // },
     caption: {
       fontSize: 12,
-      color: "#074F57",
+      color:"#136A61"
     },
-    subtitle1: {
-      fontSize: 14,
-      fontWeight: 700,
-      color:"#074F57",
-    },  
+    // subtitle1: {
+    //   fontSize: 14,
+    //   fontWeight: 700,
+    //   color:"#136A61",
+    // },  
+    fontFamily: 'Cormorant, serif',
+    
   },
 });

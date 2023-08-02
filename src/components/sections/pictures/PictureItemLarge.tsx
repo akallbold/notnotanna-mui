@@ -32,7 +32,7 @@ const PictureItemLarge: React.FunctionComponent<IPictureItem> = ({
         </Card>
       </Grid>
       <Grid sx={{ width: "40%" }} px={3}>
-        <Typography variant="body2">{description}</Typography>
+        <Typography variant="body1">{description}</Typography>
       </Grid>
     </Grid>
   );

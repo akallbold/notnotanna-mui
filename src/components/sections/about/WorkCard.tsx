@@ -1,7 +1,7 @@
 import Typography from "@mui/material/Typography";
 import Card from "@mui/material/Card";
-import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
+import Grid from "@mui/material/Unstable_Grid2"; // Grid version 2
 
 type IImageData = {
   src: string;
@@ -10,10 +10,10 @@ type IImageData = {
 
 type IWorkCard = {
   description: string;
-  images: IImageData[];
   title: string;
-  leadExperience: string;
-  icExperience: string;
+  images?: IImageData[];
+  leadExperience?: string;
+  icExperience?: string;
 };
 
 type IWorkCardProps = {
@@ -22,22 +22,53 @@ type IWorkCardProps = {
 
 const WorkCard: React.FunctionComponent<IWorkCardProps> = ({ data }) => {
   const { description, leadExperience, images, title, icExperience } = data;
+
+  const renderLogos = () => {
+    if (!images) return null;
+    return images.map((image, i) => {
+      return (
+        <Grid key={i}>
+          <img src={image.src} alt={image.alt} height="100" width="100" />
+        </Grid>
+      );
+    });
+  };
   return (
     <Card sx={{ maxWidth: 345, margin: 1 }}>
-      <CardMedia
-        component="img"
-        alt={images[0].alt}
-        height="100"
-        width="100"
-        image={images[0].src}
-      />
+      <Grid container spacing={1} justifyContent="center" py={1}>
+        {images && renderLogos()}
+      </Grid>
       <CardContent>
-        <Typography gutterBottom variant="h3">
-          {title}
-        </Typography>
-        <Typography variant="body1">{description}</Typography>
-        <Typography variant="body2">Lead Engineer: {leadExperience}</Typography>
-        <Typography variant="body2">IC: {icExperience}</Typography>
+        <Grid container justifyContent="center">
+          <Grid>
+            <Typography gutterBottom variant="h5">
+              {title}
+            </Typography>
+          </Grid>
+          <Grid py={1}>
+            <Typography variant="body1">{description}</Typography>
+          </Grid>
+          <Grid py={1}>
+            {leadExperience && (
+              <>
+                <Typography variant="body1" sx={{ fontWeight: "bold" }}>
+                  Lead Engineer:
+                </Typography>
+                <Typography variant="body1">{leadExperience}</Typography>
+              </>
+            )}
+          </Grid>
+          <Grid py={1}>
+            {icExperience && (
+              <>
+                <Typography variant="body1" sx={{ fontWeight: "bold" }}>
+                  IC:
+                </Typography>
+                <Typography variant="body1">{icExperience}</Typography>
+              </>
+            )}
+          </Grid>
+        </Grid>
       </CardContent>
     </Card>
   );

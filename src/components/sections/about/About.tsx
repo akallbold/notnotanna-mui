@@ -8,6 +8,7 @@ import {
   SoftwareDevelopmentBack,
   CloudDeployments,
   EmergingTech,
+  GeneralManagement,
 } from "../../../data/work";
 import { Uconn, Yale, Flatiron } from "../../../data/education";
 import WorkCard from "./WorkCard";
@@ -15,6 +16,7 @@ import PanelGrid from "./PanelGrid";
 import LargeSection from "../LargeSection";
 import EducationCard from "./EducationCard";
 import CertificateGrid from "./CertificateGrid";
+import { Typography } from "@mui/material";
 
 function a11yProps(index: number) {
   return {
@@ -30,6 +32,7 @@ export default function AboutLarge(data: any) {
     SoftwareDevelopmentBack,
     CloudDeployments,
     EmergingTech,
+    GeneralManagement,
   ];
   const education = [Flatiron, Yale, Uconn];
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
@@ -49,8 +52,11 @@ export default function AboutLarge(data: any) {
   }, []);
 
   return (
-    <LargeSection fullWidth={windowWidth < 800}>
-      <Grid>
+    <LargeSection fullWidth fullHeight>
+      <Grid sx={{ backgroundColor: "rgba(19,106,97,0.04)" }}>
+        <Grid py={3}>
+          <Typography variant="h3">About Me</Typography>
+        </Grid>
         <Grid>
           <Tabs
             value={value}
@@ -60,9 +66,15 @@ export default function AboutLarge(data: any) {
               "& .MuiTabs-indicator": {
                 backgroundColor: "transparent",
               },
-              "& .MuiTab-root": {
+              "& .Mui-selected": {
                 color: "secondary.main",
               },
+              "& .MuiTab-root": {
+                color: "primary.main",
+                fontWeight: "bolder",
+                fontSize: windowWidth > 768 ? "large" : "small",
+              },
+              overflow: "visible",
               // TODO: add a different color for selected
             }}
           >

@@ -33,11 +33,11 @@ const EducationCard: React.FunctionComponent<IEducationCardProps> = ({
         image={image.src}
       />
       <CardContent>
-        <Typography gutterBottom variant="h3">
+        <Typography gutterBottom variant="h5">
           {title}
         </Typography>
         <Typography variant="caption">{years}</Typography>
-        <Typography variant="body2"> {concentration}</Typography>
+        <Typography variant="body1"> {concentration}</Typography>
       </CardContent>
     </Card>
   );

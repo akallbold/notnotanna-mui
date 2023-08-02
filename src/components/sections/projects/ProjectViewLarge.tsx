@@ -19,16 +19,19 @@ const ProjectViewLarge = ({ project }: IProjectCardProps) => {
   return (
     <Grid container flexDirection="row" px={3} justifyContent="space-evenly">
       <Grid container sx={{ width: "40%", alignContent: "center" }}>
-        <Typography variant="h2" sx={{ textAlign: "left" }}>
+        <Typography variant="h4" sx={{ textAlign: "left" }}>
           {project.title}
         </Typography>
         <Typography variant="body1" sx={{ textAlign: "left" }}>
           {project.description}
         </Typography>
         {project.link && (
-          <Button onClick={() => window.open(project.link, "_blank")}>
-            Link to Site
-            <ArrowOutwardIcon />
+          <Button
+            onClick={() => window.open(project.link, "_blank")}
+            sx={{ color: "secondary.main" }}
+          >
+            LINK TO SITE
+            <ArrowOutwardIcon sx={{ color: "secondary.main" }} />
           </Button>
         )}
       </Grid>
@@ -38,8 +41,8 @@ const ProjectViewLarge = ({ project }: IProjectCardProps) => {
             <img
               src={project.img}
               alt={project.imgAlt}
-              height="100%"
-              width="100%"
+              height="90%"
+              width="90%"
             />
           </CardMedia>
         </Card>

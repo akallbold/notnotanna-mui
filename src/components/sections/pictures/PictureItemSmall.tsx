@@ -25,7 +25,7 @@ const PictureItemSmall: React.FunctionComponent<IPictureItem> = ({
         <Typography variant="caption">{date}</Typography>
       </Grid>
       <Grid>
-        <Typography variant="body2">{description}</Typography>
+        <Typography variant="body1">{description}</Typography>
       </Grid>
     </Grid>
   );

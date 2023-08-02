@@ -8,7 +8,8 @@ function Landing() {
       <Grid
         container
         sx={{
-          backgroundColor: "primary.main",
+          backgroundImage: "url(/images/hero.png)",
+          backgroundSize: "cover",
           justifyContent: "center",
           alignContent: "center",
         }}
@@ -18,7 +19,7 @@ function Landing() {
             width: "40%",
           }}
         >
-          <Typography variant="h1">
+          <Typography variant="h2">
             Hi! I am Anna, a fullstack engineer with a background as a project
             manager and product manager. Welcome to my site.
           </Typography>

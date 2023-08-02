@@ -23,7 +23,7 @@ function Footer(props: any) {
       px={3}
     >
       <Grid>
-        <Typography variant="h1" color="text.secondary">
+        <Typography variant="h1" color="secondary.main">
           AKB
         </Typography>
       </Grid>
@@ -33,9 +33,9 @@ function Footer(props: any) {
           sx={{
             my: 2,
             mx: 2,
-            color: "white",
             display: "block",
             alignSelf: "center",
+            color: "secondary.main",
           }}
         />
         <LinkedInIcon
@@ -43,9 +43,9 @@ function Footer(props: any) {
           sx={{
             my: 2,
             mx: 2,
-            color: "white",
             display: "block",
             alignSelf: "center",
+            color: "secondary.main",
           }}
         />
       </Grid>

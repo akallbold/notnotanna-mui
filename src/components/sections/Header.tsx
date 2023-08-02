@@ -2,13 +2,9 @@ import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-import Menu from "@mui/material/Menu";
-import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
-import MenuItem from "@mui/material/MenuItem";
 
 const pages = [
   { label: "About Me", elementName: "about" },
@@ -18,17 +14,17 @@ const pages = [
 
 function Header(props: any) {
   const { scrollToSection } = props;
-  const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
-    null
-  );
+  // const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
+  //   null
+  // );
 
-  const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorElNav(event.currentTarget);
-  };
+  // const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
+  //   setAnchorElNav(event.currentTarget);
+  // };
 
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
+  // const handleCloseNavMenu = () => {
+  //   setAnchorElNav(null);
+  // };
 
   return (
     <AppBar position="static">
@@ -41,16 +37,17 @@ function Header(props: any) {
             href="/"
             sx={{
               mr: 2,
-              display: { xs: "none", md: "flex" },
+              display: { xs: "none", sm: "flex" },
               fontWeight: 700,
               letterSpacing: ".3rem",
               textDecoration: "none",
+              color: "secondary.main",
             }}
           >
             AKB
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+          {/* <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -87,11 +84,19 @@ function Header(props: any) {
                     handleCloseNavMenu();
                   }}
                 >
-                  <Typography textAlign="center">{page.label}</Typography>
+                  <Typography
+                    textAlign="center"
+                    sx={{
+                      color: "#136A61",
+                      fontWeight: 800,
+                    }}
+                  >
+                    {page.label}
+                  </Typography>
                 </MenuItem>
               ))}
             </Menu>
-          </Box>
+          </Box> */}
 
           <Typography
             variant="h1"
@@ -100,16 +105,17 @@ function Header(props: any) {
             href=""
             sx={{
               mr: 2,
-              display: { xs: "flex", md: "none" },
+              display: { xs: "flex", sm: "none" },
               flexGrow: 1,
               fontWeight: 700,
               letterSpacing: ".3rem",
               textDecoration: "none",
+              color: "secondary.main",
             }}
           >
             AKB
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: "none", sm: "flex" } }}>
             {pages.map((page) => (
               <Button
                 key={page.label}
@@ -117,7 +123,7 @@ function Header(props: any) {
                   console.log({ page });
                   scrollToSection(page.elementName);
                 }}
-                sx={{ my: 2, color: "white", display: "block" }}
+                sx={{ my: 2, color: "secondary.main", display: "block" }}
               >
                 {page.label}
               </Button>
