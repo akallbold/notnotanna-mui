@@ -8,4 +8,10 @@ export const constants = {
     "https://learn.deeplearning.ai/chatgpt-prompt-eng/lesson/",
   githubUrl: "https://github.com/akallbold",
   rombaVideoLink: "https://www.youtube.com/watch?v=rAJbRdx2wDE&t=1s",
+  shantellSansGithubUrl:
+    "https://github.com/akallbold/shantell-typewriter-front",
+  notBitlyGithubUrl: "https://github.com/akallbold/not-bitly",
+  openAiChatGithubUrl: "https://github.com/akallbold/openai-chat",
+  agileAppStoreUrl:
+    "https://apps.apple.com/in/app/agile-fun-sticker-pack/id1501776587",
 };

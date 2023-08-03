@@ -17,6 +17,7 @@ type IProjectCardProps = {
 
 const ProjectViewLarge = ({ project }: IProjectCardProps) => {
   const isMobile = useIsMobile();
+
   return (
     <Grid
       container
@@ -60,7 +61,7 @@ const ProjectViewLarge = ({ project }: IProjectCardProps) => {
         </Grid>
       </Grid>
       <Grid sx={{ width: isMobile ? "100%" : "40%" }}>
-        <img src={project.img} alt={project.imgAlt} height="90%" width="90%" />
+        <img src={project.img} alt={project.imgAlt} width="100%" />
       </Grid>
     </Grid>
   );

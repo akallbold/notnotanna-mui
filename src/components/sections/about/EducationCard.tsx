@@ -45,7 +45,7 @@ const EducationCard: React.FunctionComponent<IEducationCardProps> = ({
         <Typography variant="caption" sx={{ fontStyle: "italic" }}>
           {years}
         </Typography>
-        <Typography variant="body1"> {concentration}</Typography>
+        <Typography variant="body1"> {concentration} </Typography>
       </CardContent>
     </Card>
   );

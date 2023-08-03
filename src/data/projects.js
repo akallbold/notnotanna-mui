@@ -2,84 +2,54 @@ import { constants } from "./constants";
 
 export const Haikus = {
   description:
-    "Meditations is not only a great book, but a wonderful source of rich vocabulary. I used the text from the book and algorithms to programatically determine the number of syllabuls in each word. The program then creates haikus based on this word set. ",
-  title: "Marcus Aurelius Haiku Generator",
-  link: "/meditations",
-  img: "/images/marcus.png",
-  imgAlt: "Marcus Aurelius",
+    "Embracing the timeless brilliance of Meditations, I used an algorithm and the text from the book to programmatically determined the number of syllables in each word. The application then creates Haikus based on this word set. The result? A harmonious blend of art and code, where Haikus gracefully emerge from Marcus' original philosophies and prose.",
   githubLink: "",
+  img: "/images/projects/marcus.png",
+  imgAlt: "Marcus Aurelius",
+  link: "/meditations",
   subtitle: "Algorithms",
+  title: "Marcus Aurelius Haiku Generator",
 };
 
 export const StickerApp = {
   description:
-    "Bridget Deeley and I created a sticker app for iOS. We built this app to have fun while working on Agile projects. Bridget drew the designs and I built the app.",
+    "Bridget Deeley and I teamed up to created a sticker app for iOS. Drawing from our experience being on agile teams, we wanted a new and fun way to communicate to the rest of our team. Bridget drew the amazing illustrations and I built the app. The most interesting part of this project was going through the App Store review process. ",
   title: "iOS Sticker App",
-  link: "/stickers",
-  img: "/images/Pair_Programming.png",
+  link: constants.agileAppStoreUrl,
+  img: "/images/projects/Pair_Programming.png",
   imgAlt: "Two octopi pair programming",
-  githubLink: "",
   subtitle: "iOS Development",
 };
 
 export const ShantellTypewriter = {
   description:
-    "Shantell Martin is an incredible artist, who captivated me not only with her work, but with her process. She recently created a font and I wanted to build something fun that would use it. Using this app, you can send messages to folks that look like they've been handwritten by Shantell herself.",
-  title: "Shantell Sans Handwritten Notes",
-  link: constants.shantellSansUrl,
-  img: "/images/shantell.png",
+    "Shantell Martin is an incredible artist, who captivated me not only with her work, but with her process. She recently created a font and I wanted to build something fun that would use it. If you're looking to add a little flair to your texts, you can send messages to folks that look like they've been handwritten by Shantell herself.",
+  githubLink: constants.shantellSansGithubUrl,
+  img: "/images/projects/shantell.png",
   imgAlt: "example of shantell sans font",
-  githubLink: "",
+  link: constants.shantellSansUrl,
   subtitle: "Pure Whimsy",
+  title: "Shantell Sans Handwritten Notes",
 };
 
 export const NotBitly = {
   description:
-    "A bit.ly clone. I built this to learn about URL shorteners and to use for my own applications to be able to send folks clean looking URLs.",
-  title: "Bitly Clone",
-  link: constants.notbitlyURL,
-  img: "/images/monkeycat.jpeg",
+    "Introducing my personal take on a bit.ly clone! The driving force behind this project was the desire to learn how URL shorteners work. Although I don't expect the same amount of scaling and collision possibilities as the original, I still enjoy having my own working bit.ly clone to use for my own applications to be able to send folks clean looking URLs.",
+  githubLink: constants.notBitlyGithubUrl,
+  img: "/images/projects/monkeycat.jpeg",
   imgAlt: "placeholder image",
-  githubLink: "Scaling Systems",
+  link: constants.notbitlyURL,
+  subtitle: "Scaling Systems",
+  title: "Bitly Clone",
 };
 
 export const AdvancedChatGPT = {
   description:
-    "The OpenAI API provides more features than ChatGPT, especially around prompt engineering. This project uses the OpenAI API to expose the features before they get integrated into the public ChatGPT and help create a more robust chatbot.",
-  title: "Advanced ChatGPT Bot",
-  link: "/advanced-chatgpt",
+    "Through the OpenAI API, there are additional features available beyond what users can access on the public ChatGPT platform. This project uses the power of OpenAI API to unlock features to users to give them early access before these features get integrated into the public ChatGPT site.",
+  githubLink: constants.openAiChatGithubUrl,
   img: "/images/chatGPT.png",
   imgAlt: "screenshot of ChatGPT",
-  githubLink: "",
+  link: "",
   subtitle: "Artificial Intelligence",
+  title: "Advanced ChatGPT Bot",
 };
-
-// export const PodBrowser = {
-//   description:
-//     "PodBrowser is a tool used to access your Pod using the Solid protocol. This was one of the public projects I was involved with while at Inrupt.",
-//   title: "PodBrowser",
-//   img: "/images/podbrowser.png",
-//   imgAlt: "screenshot of PodBrowser",
-//   githubLink: "",
-//   link: "https://podbrowser.inrupt.com/",
-// };
-
-// export const Intermountain = {
-//   description:
-//     "Using React Native we built a mobile app for Intermountain Healthcare. This app allows users to access their medical records, schedule appointments, and more.",
-//   title: "Intermountain Healthcare App",
-//   img: "/images/intermountain.png",
-//   imgAlt: "screenshot of intermountain my health app",
-//   githubLink: "",
-//   link: "https://apps.apple.com/us/app/my-health-by-intermountain/id1454432442",
-// };
-
-// export const LiveWire = {
-//   description:
-//     "I worked on the livewire launch on a professional project. The site was (almost) purely frontend and was a great opportunity to work with Angular and the Greensock animation library.",
-//   title: "LiveWire Homepage",
-//   link: constants.livewireURL,
-//   img: "/images/livewire-homepage.png",
-//   imgAlt: "livewire homepage",
-//   githubLink: "",
-// };
