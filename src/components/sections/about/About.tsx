@@ -27,16 +27,18 @@ function a11yProps(index: number) {
   };
 }
 
+const work = [
+  SoftwareDevelopmentFront,
+  SoftwareDevelopmentBack,
+  CloudDeployments,
+  EmergingTech,
+  ProjectManagement,
+];
+
+const education = [Flatiron, Yale, Uconn];
+
 export default function About(data: any) {
   const [value, setValue] = React.useState(0);
-  const work = [
-    SoftwareDevelopmentFront,
-    SoftwareDevelopmentBack,
-    CloudDeployments,
-    EmergingTech,
-    ProjectManagement,
-  ];
-  const education = [Flatiron, Yale, Uconn];
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
   };
@@ -66,7 +68,7 @@ export default function About(data: any) {
                 fontWeight: "bolder",
                 fontSize: isMobile ? "small" : "large",
               },
-              // overflow: "visible",
+              overflow: "visible",
             }}
           >
             <Tab label="Work" {...a11yProps(0)} />

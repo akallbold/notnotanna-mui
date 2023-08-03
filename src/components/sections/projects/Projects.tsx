@@ -12,14 +12,15 @@ import { Typography } from "@mui/material";
 import LargeSection from "../LargeSection";
 import useIsMobile from "../../../hooks/useIsMobile";
 
+const projects = [
+  AdvancedChatGPT,
+  ShantellTypewriter,
+  NotBitly,
+  StickerApp,
+  Haikus,
+];
+
 function Projects() {
-  const projects = [
-    AdvancedChatGPT,
-    ShantellTypewriter,
-    NotBitly,
-    StickerApp,
-    Haikus,
-  ];
   const isMobile = useIsMobile();
 
   return (
@@ -39,7 +40,7 @@ function Projects() {
           <Typography variant="h2">Personal Projects</Typography>
         </Grid>
         <Carousel
-          interval={100000}
+          interval={8000}
           navButtonsAlwaysVisible={!isMobile}
           height="80vh"
         >
