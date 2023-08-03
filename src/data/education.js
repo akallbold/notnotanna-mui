@@ -13,7 +13,7 @@ export const Yale = {
 };
 
 export const Flatiron = {
-  title: "Flatiron",
+  title: "Flatiron Coding Bootcamp",
   image: { src: "/images/education/flatiron.png", alt: "flatiron logo" },
   years: "2017-2018",
   concentration: "Javascript and Ruby",

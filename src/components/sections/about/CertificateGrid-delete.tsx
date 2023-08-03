@@ -13,9 +13,9 @@ function CertificateGrid(props: CertificateGridProps) {
     <Grid
       container
       flexDirection={isMobile ? "row" : "column"}
-      justifyContent={isMobile ? "space-between" : "space-around"}
+      justifyContent={isMobile ? "space-around" : "space-around"}
       sx={{
-        width: isMobile ? "80%" : "100%",
+        width: "100%",
       }}
       m={2}
       p={2}

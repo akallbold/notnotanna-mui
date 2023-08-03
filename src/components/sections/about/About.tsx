@@ -18,6 +18,7 @@ import EducationCard from "./EducationCard";
 import { Typography } from "@mui/material";
 import PridePanel from "./PridePanel";
 import CertificationPanel from "./CertificationPanel";
+import useIsMobile from "../../../hooks/useIsMobile";
 
 function a11yProps(index: number) {
   return {
@@ -39,18 +40,7 @@ export default function About(data: any) {
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
   };
-  const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
-
-  React.useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  const isMobile = useIsMobile();
 
   return (
     <LargeSection fullWidth fullHeight>
@@ -73,7 +63,7 @@ export default function About(data: any) {
               "& .MuiTab-root": {
                 color: "primary.main",
                 fontWeight: "bolder",
-                fontSize: windowWidth > 768 ? "large" : "small",
+                fontSize: isMobile ? "small" : "large",
               },
               overflow: "visible",
               // TODO: add a different color for selected and make underlined
@@ -94,14 +84,14 @@ export default function About(data: any) {
           </PanelGrid>
         </TabPanel>
         <TabPanel value={value} index={1}>
-          <PanelGrid>
+          <PanelGrid column={isMobile}>
             {education.map((data, i) => (
               <EducationCard data={data} key={i} />
             ))}
           </PanelGrid>
         </TabPanel>
         <TabPanel value={value} index={2}>
-          <PanelGrid>
+          <PanelGrid column={isMobile}>
             <CertificationPanel />
           </PanelGrid>
         </TabPanel>
