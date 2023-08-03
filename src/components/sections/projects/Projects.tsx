@@ -1,5 +1,4 @@
 import Carousel from "react-material-ui-carousel";
-import { useEffect, useState } from "react";
 import ProjectViewLarge from "./ProjectView";
 import {
   AdvancedChatGPT,
