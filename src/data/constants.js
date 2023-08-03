@@ -7,4 +7,5 @@ export const constants = {
   promptEngineeringCourseUrl:
     "https://learn.deeplearning.ai/chatgpt-prompt-eng/lesson/",
   githubUrl: "https://github.com/akallbold",
+  rombaVideoLink: "https://www.youtube.com/watch?v=rAJbRdx2wDE&t=1s",
 };

@@ -62,16 +62,16 @@ export const theme = createTheme({
   },
   palette: {
     primary: {
-      main: '#F7D4C7', // pink
-      dark: '#ac948b', // dark pink for subtitle1
+      main: '#FFABA2', // pink
+      dark: "#b27771", // dark pink for subtitle1
     },
     secondary: {
       main: '#136A61', // green
     },
 
     text: {
-      primary: '#FEE7E6',
-      secondary: '#FEE7E6',
+      primary: '#FFABA2',
+      secondary: '#FFABA2',
     },
     divider: '#00000050',
   },
@@ -131,7 +131,7 @@ export const theme = createTheme({
     subtitle1: {
       fontSize: 14,
       fontWeight: 700,
-      color:'#ac948b',
+      color:"#b27771",
       textAlign: "left",
       letterSpacing: "2px",
       textTransform:"uppercase"

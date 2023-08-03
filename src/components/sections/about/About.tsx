@@ -8,15 +8,16 @@ import {
   SoftwareDevelopmentBack,
   CloudDeployments,
   EmergingTech,
-  GeneralManagement,
+  ProjectManagement,
 } from "../../../data/work";
 import { Uconn, Yale, Flatiron } from "../../../data/education";
 import WorkCard from "./WorkCard";
 import PanelGrid from "./PanelGrid";
 import LargeSection from "../LargeSection";
 import EducationCard from "./EducationCard";
-import CertificateGrid from "./CertificateGrid";
 import { Typography } from "@mui/material";
+import PridePanel from "./PridePanel";
+import CertificationPanel from "./CertificationPanel";
 
 function a11yProps(index: number) {
   return {
@@ -25,14 +26,14 @@ function a11yProps(index: number) {
   };
 }
 
-export default function AboutLarge(data: any) {
+export default function About(data: any) {
   const [value, setValue] = React.useState(0);
   const work = [
     SoftwareDevelopmentFront,
     SoftwareDevelopmentBack,
     CloudDeployments,
     EmergingTech,
-    GeneralManagement,
+    ProjectManagement,
   ];
   const education = [Flatiron, Yale, Uconn];
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
@@ -75,7 +76,7 @@ export default function AboutLarge(data: any) {
                 fontSize: windowWidth > 768 ? "large" : "small",
               },
               overflow: "visible",
-              // TODO: add a different color for selected
+              // TODO: add a different color for selected and make underlined
               color: "secondary.dark",
             }}
           >
@@ -101,46 +102,13 @@ export default function AboutLarge(data: any) {
         </TabPanel>
         <TabPanel value={value} index={2}>
           <PanelGrid>
-            <CertificateGrid windowWidth={windowWidth}>
-              <img
-                src="/images/certs/AWS-CP.png"
-                alt="AWS Cloud Practitioner Badge"
-                height="100px"
-              />
-              <img
-                src="/images/certs/AWS-DA.png"
-                alt="AWS Developer Associate Badge"
-                height="100px"
-              />
-            </CertificateGrid>
-            <CertificateGrid windowWidth={windowWidth}>
-              <img
-                src="/images/certs/sfdc-srvc-badge.png"
-                alt="Salesforce Service Cloud Badge"
-                height="100px"
-              />
-              <img
-                src="/images/certs/sfdc-admin-badge.png"
-                alt="Salesforce Administrator Badge"
-                height="100px"
-              />
-            </CertificateGrid>
-            <CertificateGrid windowWidth={windowWidth}>
-              <img
-                src="/images/certs/gcp_cloud_arch.png"
-                alt="Google Cloud Architect Badge"
-                height="100px"
-              />
-              <img
-                src="/images/certs/gcp_cloud_eng.png"
-                alt="Google Cloud Engineer Badge"
-                height="100px"
-              />
-            </CertificateGrid>
+            <CertificationPanel />
           </PanelGrid>
         </TabPanel>
         <TabPanel value={value} index={3}>
-          <PanelGrid>Pride things to go here</PanelGrid>
+          <PanelGrid>
+            <PridePanel />
+          </PanelGrid>
         </TabPanel>
       </Grid>
     </LargeSection>

@@ -1,20 +1,21 @@
 import Grid from "@mui/material/Unstable_Grid2"; // Grid version 2
+import useIsMobile from "../../../hooks/useIsMobile";
 
 interface CertificateGridProps {
   children?: React.ReactNode;
-  windowWidth: number;
 }
 
 function CertificateGrid(props: CertificateGridProps) {
-  const { children, windowWidth } = props;
+  const { children } = props;
+  const isMobile = useIsMobile();
 
   return (
     <Grid
       container
-      flexDirection={windowWidth < 800 ? "row" : "column"}
-      justifyContent="space-between"
+      flexDirection={isMobile ? "row" : "column"}
+      justifyContent={isMobile ? "space-between" : "space-around"}
       sx={{
-        width: windowWidth < 800 ? "80%" : "25%",
+        width: isMobile ? "80%" : "100%",
       }}
       m={2}
       p={2}

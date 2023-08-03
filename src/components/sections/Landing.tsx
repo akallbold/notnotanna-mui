@@ -1,14 +1,19 @@
 import Grid from "@mui/material/Unstable_Grid2"; // Grid version 2
 import Typography from "@mui/material/Typography";
 import LargeSection from "./LargeSection";
+import useIsMobile from "../../hooks/useIsMobile";
 
 function Landing() {
+  const isMobile = useIsMobile();
+
   return (
     <LargeSection fullWidth fullHeight>
       <Grid
         container
         sx={{
-          backgroundImage: "url(/images/hero.png)",
+          backgroundImage: isMobile
+            ? "url(/images/hero-mobile.png)"
+            : "url(/images/hero.png)",
           backgroundSize: "cover",
           justifyContent: "center",
           alignContent: "center",
@@ -16,7 +21,7 @@ function Landing() {
       >
         <Grid
           sx={{
-            width: "40%",
+            width: isMobile ? "80%" : "40%",
           }}
         >
           <Typography variant="h2">

@@ -9,7 +9,7 @@ type IImageData = {
 };
 
 type IWorkCard = {
-  description: string;
+  description?: string;
   title: string;
   images?: IImageData[];
   leadExperience?: string;
@@ -24,18 +24,18 @@ const WorkCard: React.FunctionComponent<IWorkCardProps> = ({ data }) => {
   const { description, leadExperience, images, title, icExperience } = data;
 
   const renderLogos = () => {
-    if (!images) return null;
+    if (!images || !images.length) return null;
     return images.map((image, i) => {
       return (
-        <Grid key={i}>
-          <img src={image.src} alt={image.alt} height="100" width="100" />
+        <Grid key={i} px={2}>
+          <img src={image.src} alt={image.alt} height="80" width="80" />
         </Grid>
       );
     });
   };
   return (
-    <Card sx={{ maxWidth: 345, margin: 1 }}>
-      <Grid container spacing={1} justifyContent="center" py={1}>
+    <Card sx={{ maxWidth: 345, m: 2 }}>
+      <Grid container justifyContent="center" py={3}>
         {images && renderLogos()}
       </Grid>
       <CardContent>
@@ -45,9 +45,11 @@ const WorkCard: React.FunctionComponent<IWorkCardProps> = ({ data }) => {
               {title}
             </Typography>
           </Grid>
-          <Grid py={1}>
-            <Typography variant="body1">{description}</Typography>
-          </Grid>
+          {description && (
+            <Grid py={1}>
+              <Typography variant="body1">{description}</Typography>
+            </Grid>
+          )}
           <Grid py={1}>
             {leadExperience && (
               <>
