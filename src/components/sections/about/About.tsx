@@ -59,15 +59,14 @@ export default function About(data: any) {
               },
               "& .Mui-selected": {
                 color: "secondary.main",
+                textDecoration: "underline",
               },
               "& .MuiTab-root": {
-                color: "primary.main",
+                color: "secondary.light",
                 fontWeight: "bolder",
                 fontSize: isMobile ? "small" : "large",
               },
-              overflow: "visible",
-              // TODO: add a different color for selected and make underlined
-              color: "secondary.dark",
+              // overflow: "visible",
             }}
           >
             <Tab label="Work" {...a11yProps(0)} />

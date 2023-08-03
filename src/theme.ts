@@ -67,6 +67,7 @@ export const theme = createTheme({
     },
     secondary: {
       main: '#136A61', // green
+      light:"#428780" 
     },
 
     text: {
@@ -82,6 +83,8 @@ export const theme = createTheme({
       fontFamily:"Shantell Sans",
       textAlign:'center',
       color: "#136A61",
+      letterSpacing: ".3rem",
+
     },
     h2: { // SECTION TITLES
       color: "#136A61",
@@ -119,10 +122,8 @@ export const theme = createTheme({
       textAlign:'left'
     },
     button: {
-      color:"#136A61",
-      textTransform: 'capitalize',
+      color:'#136A61',
       textAlign:'left',
-      textDecoration:"underline"
     },
     caption: {
       fontSize: 12,

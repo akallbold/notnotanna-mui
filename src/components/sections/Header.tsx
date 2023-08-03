@@ -38,10 +38,7 @@ function Header(props: any) {
             sx={{
               mr: 2,
               display: { xs: "none", sm: "flex" },
-              fontWeight: 700,
-              letterSpacing: ".3rem",
               textDecoration: "none",
-              color: "secondary.main",
             }}
           >
             AKB
@@ -107,15 +104,17 @@ function Header(props: any) {
               mr: 2,
               display: { xs: "flex", sm: "none" },
               flexGrow: 1,
-              fontWeight: 700,
-              letterSpacing: ".3rem",
               textDecoration: "none",
-              color: "secondary.main",
             }}
           >
             AKB
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", sm: "flex" } }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: "none", sm: "flex" },
+            }}
+          >
             {pages.map((page) => (
               <Button
                 key={page.label}
@@ -123,7 +122,7 @@ function Header(props: any) {
                   console.log({ page });
                   scrollToSection(page.elementName);
                 }}
-                sx={{ my: 2, color: "secondary.main", display: "block" }}
+                sx={{ color: "secondary.main", display: "block" }}
               >
                 {page.label}
               </Button>

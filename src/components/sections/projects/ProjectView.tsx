@@ -54,6 +54,7 @@ const ProjectViewLarge = ({ project }: IProjectCardProps) => {
             <Typography
               onClick={() => window.open(project.link, "_blank")}
               variant="button"
+              sx={{ textDecoration: "underline" }}
             >
               LINK TO SITE
             </Typography>
