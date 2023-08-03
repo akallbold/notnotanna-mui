@@ -40,8 +40,7 @@ function Projects() {
         </Grid>
         <Carousel
           interval={100000}
-          navButtonsAlwaysVisible
-          // height={isMobile ? "80vh" : "70vh"}
+          navButtonsAlwaysVisible={!isMobile}
           height="80vh"
         >
           {projects.map((project, i) => {
