@@ -46,7 +46,7 @@ export default function About(data: any) {
 
   return (
     <LargeSection fullWidth fullHeight>
-      <Grid sx={{ backgroundColor: "rgba(19,106,97,0.04)" }}>
+      <Grid sx={{ backgroundColor: "rgba(19,106,97,0.04)" , flexGrow:1}}>
         <Grid py={3}>
           <Typography variant="h2">About Me</Typography>
         </Grid>

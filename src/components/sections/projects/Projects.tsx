@@ -42,7 +42,7 @@ function Projects() {
         <Carousel
           interval={8000}
           navButtonsAlwaysVisible={!isMobile}
-          height="80vh"
+          height={isMobile ? "110vh": "80vh"}
         >
           {projects.map((project, i) => {
             return <ProjectViewLarge project={project} key={i} />;
