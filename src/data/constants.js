@@ -4,6 +4,7 @@ export const constants = {
   bridgetLinkedin: "https://www.linkedin.com/in/bridget-d-b7854a98/",
   shantellSansUrl: "https://shantellsansnotes.com",
   notbitlyURL: "https://notbitly.com",
+  marcusHaikusUrl: "https://marcushaikus.com/",
   promptEngineeringCourseUrl:
     "https://learn.deeplearning.ai/chatgpt-prompt-eng/lesson/",
   githubUrl: "https://github.com/akallbold",

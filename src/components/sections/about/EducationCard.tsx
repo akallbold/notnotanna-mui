@@ -32,7 +32,7 @@ const EducationCard: React.FunctionComponent<IEducationCardProps> = ({
         maxWidth: 345,
         margin: 2,
         flexGrow: 1,
-        flexBasis: isMobile ? null : 0,
+        flexBasis: isMobile ? "auto" : 0,
       }}
     >
       <CardContent>

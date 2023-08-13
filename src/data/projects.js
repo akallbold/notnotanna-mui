@@ -6,7 +6,7 @@ export const Haikus = {
   githubLink: "",
   img: "/images/projects/marcus.png",
   imgAlt: "Marcus Aurelius",
-  link: "/meditations",
+  link: constants.marcusHaikusUrl,
   subtitle: "Algorithms",
   title: "Marcus Aurelius Haiku Generator",
 };
