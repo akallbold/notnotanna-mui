@@ -49,7 +49,7 @@ export const AdvancedChatGPT = {
   githubLink: constants.openAiChatGithubUrl,
   img: "/images/chatGPT.png",
   imgAlt: "screenshot of ChatGPT",
-  link: "",
+  link: constants.chatGptUrl,
   subtitle: "Artificial Intelligence",
   title: "Advanced ChatGPT Bot",
 };

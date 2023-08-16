@@ -5,6 +5,7 @@ export const constants = {
   shantellSansUrl: "https://shantellsansnotes.com",
   notbitlyURL: "https://notbitly.com",
   marcusHaikusUrl: "https://marcushaikus.com/",
+  chatGptUrl: "https://chatgptpreview.app/",
   promptEngineeringCourseUrl:
     "https://learn.deeplearning.ai/chatgpt-prompt-eng/lesson/",
   githubUrl: "https://github.com/akallbold",
