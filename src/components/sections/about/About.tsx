@@ -3,15 +3,7 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import TabPanel from "./TabPanel";
 import Grid from "@mui/material/Unstable_Grid2"; // Grid version 2
-import {
-  SoftwareDevelopmentFront,
-  SoftwareDevelopmentBack,
-  CloudDeployments,
-  EmergingTech,
-  ProjectManagement,
-} from "../../../data/work";
 import { Uconn, Yale, Flatiron } from "../../../data/education";
-import WorkCard from "./WorkCard";
 import PanelGrid from "./PanelGrid";
 import LargeSection from "../LargeSection";
 import EducationCard from "./EducationCard";
@@ -19,6 +11,7 @@ import { Typography } from "@mui/material";
 import PridePanel from "./PridePanel";
 import CertificationPanel from "./CertificationPanel";
 import useIsMobile from "../../../hooks/useIsMobile";
+import WorkPanel from "./WorkPanel";
 
 function a11yProps(index: number) {
   return {
@@ -26,14 +19,6 @@ function a11yProps(index: number) {
     "aria-controls": `simple-tabpanel-${index}`,
   };
 }
-
-const work = [
-  SoftwareDevelopmentFront,
-  SoftwareDevelopmentBack,
-  CloudDeployments,
-  EmergingTech,
-  ProjectManagement,
-];
 
 const education = [Flatiron, Yale, Uconn];
 
@@ -46,7 +31,7 @@ export default function About(data: any) {
 
   return (
     <LargeSection fullWidth fullHeight>
-      <Grid sx={{ backgroundColor: "rgba(19,106,97,0.04)" , flexGrow:1}}>
+      <Grid sx={{ backgroundColor: "rgba(19,106,97,0.04)", flexGrow: 1 }}>
         <Grid py={3}>
           <Typography variant="h2">About Me</Typography>
         </Grid>
@@ -68,7 +53,7 @@ export default function About(data: any) {
                 fontWeight: "bolder",
                 fontSize: isMobile ? "small" : "large",
               },
-              overflow: "visible",
+              // overflow: "visible",
             }}
           >
             <Tab label="Work" {...a11yProps(0)} />
@@ -79,9 +64,7 @@ export default function About(data: any) {
         </Grid>
         <TabPanel value={value} index={0}>
           <PanelGrid>
-            {work.map((data, i) => (
-              <WorkCard data={data} key={i} />
-            ))}
+            <WorkPanel />
           </PanelGrid>
         </TabPanel>
         <TabPanel value={value} index={1}>
