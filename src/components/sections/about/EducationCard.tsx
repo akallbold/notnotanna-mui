@@ -37,7 +37,7 @@ const EducationCard: React.FunctionComponent<IEducationCardProps> = ({
     >
       <CardContent>
         <Grid container justifyContent="center" py={3}>
-          <img src={image.src} alt={image.alt} width="50%" />
+          <img src={image.src} alt={image.alt} width="50%" loading="lazy" />
         </Grid>
         <Typography gutterBottom variant="h5">
           {title}

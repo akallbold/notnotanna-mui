@@ -17,12 +17,14 @@ export default function CertificationPanel(data: any) {
           alt="AWS Cloud Practitioner Badge"
           height="100px"
           width="100px"
+          loading="lazy"
         />
         <img
           src="/images/certs/AWS-DA.png"
           alt="AWS Developer Associate Badge"
           height="100px"
           width="100px"
+          loading="lazy"
         />
       </Grid>
       <Grid display="flex" flexDirection={isMobile ? "row" : "column"} m={2}>
@@ -31,6 +33,7 @@ export default function CertificationPanel(data: any) {
           alt="Google Cloud Architect Badge"
           height="100px"
           width="100px"
+          loading="lazy"
         />
         <img
           src="/images/certs/gcp_cloud_eng.png"

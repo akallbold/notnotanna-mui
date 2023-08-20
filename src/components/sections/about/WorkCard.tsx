@@ -28,7 +28,13 @@ const WorkCard: React.FunctionComponent<IWorkCardProps> = ({ data }) => {
     return images.map((image, i) => {
       return (
         <Grid key={i} px={2}>
-          <img src={image.src} alt={image.alt} height="80" width="80" />
+          <img
+            src={image.src}
+            alt={image.alt}
+            height="80"
+            width="80"
+            loading="lazy"
+          />
         </Grid>
       );
     });

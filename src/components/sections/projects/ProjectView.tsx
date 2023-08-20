@@ -62,7 +62,12 @@ const ProjectViewLarge = ({ project }: IProjectCardProps) => {
         </Grid>
       </Grid>
       <Grid sx={{ width: isMobile ? "100%" : "40%" }}>
-        <img src={project.img} alt={project.imgAlt} width="100%" />
+        <img
+          loading="lazy"
+          src={project.img}
+          alt={project.imgAlt}
+          width="100%"
+        />
       </Grid>
     </Grid>
   );

@@ -16,10 +16,13 @@ const PictureItemSmall: React.FunctionComponent<IPictureItem> = ({
 }) => {
   return (
     <Grid container flexDirection="column" justifyContent="center">
-      <Grid
-      // sx={{ height: "100%" }}
-      >
-        <img src={img} alt={imgAlt} style={{ width: "100%", height: "100%" }} />
+      <Grid>
+        <img
+          src={img}
+          alt={imgAlt}
+          loading="lazy"
+          style={{ width: "100%", height: "100%" }}
+        />
       </Grid>
       <Grid>
         <Typography variant="caption">{date}</Typography>
