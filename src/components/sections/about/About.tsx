@@ -31,7 +31,12 @@ export default function About(data: any) {
 
   return (
     <LargeSection fullWidth fullHeight>
-      <Grid sx={{ backgroundColor: "rgba(19,106,97,0.04)", flexGrow: 1 }}>
+      <Grid
+        sx={{
+          backgroundColor: "rgba(19,106,97,0.04)",
+          // flexGrow: 1
+        }}
+      >
         <Grid py={3}>
           <Typography variant="h2">About Me</Typography>
         </Grid>
@@ -51,9 +56,9 @@ export default function About(data: any) {
               "& .MuiTab-root": {
                 color: "secondary.light",
                 fontWeight: "bolder",
-                fontSize: isMobile ? "small" : "large",
+                fontSize: isMobile ? "x-small" : "large",
               },
-              // overflow: "visible",
+              overflow: "hidden",
             }}
           >
             <Tab label="Work" {...a11yProps(0)} />

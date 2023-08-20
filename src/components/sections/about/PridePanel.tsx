@@ -12,7 +12,7 @@ export default function PridePanel(data: any) {
           <ListItem>
             <Grid container flexDirection="column">
               <Grid container>
-                <Typography variant="subtitle1" sx={{ marginRight: "8px" }}>
+                <Typography variant="subtitle1" sx={{ marginRight: "1em" }}>
                   Los Angeles
                 </Typography>
                 <Typography variant="subtitle1" sx={{ fontStyle: "italic" }}>
@@ -32,7 +32,7 @@ export default function PridePanel(data: any) {
           <ListItem>
             <Grid container flexDirection="column">
               <Grid container>
-                <Typography variant="subtitle1" sx={{ marginRight: "8px" }}>
+                <Typography variant="subtitle1" sx={{ marginRight: "1em" }}>
                   Yale School of Management
                 </Typography>
                 <Typography variant="subtitle1" sx={{ fontStyle: "italic" }}>
@@ -58,7 +58,7 @@ export default function PridePanel(data: any) {
           <ListItem>
             <Grid container flexDirection="column">
               <Grid container>
-                <Typography variant="subtitle1" sx={{ marginRight: "8px" }}>
+                <Typography variant="subtitle1" sx={{ marginRight: "1em" }}>
                   BCG X
                 </Typography>
                 <Typography variant="subtitle1" sx={{ fontStyle: "italic" }}>
@@ -76,7 +76,7 @@ export default function PridePanel(data: any) {
           <ListItem>
             <Grid container flexDirection="column">
               <Grid container>
-                <Typography variant="subtitle1" sx={{ marginRight: "8px" }}>
+                <Typography variant="subtitle1" sx={{ marginRight: "1em" }}>
                   Inrupt
                 </Typography>
                 <Typography variant="subtitle1" sx={{ fontStyle: "italic" }}>

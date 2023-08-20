@@ -46,13 +46,13 @@ export default function CertificationPanel(data: any) {
         <img
           src="/images/certs/sfdc-srvc-badge.png"
           alt="Salesforce Service Cloud Badge"
-          height="100px"
+          height="110px"
           width="100px"
         />
         <img
           src="/images/certs/sfdc-admin-badge.png"
           alt="Salesforce Administrator Badge"
-          height="100px"
+          height="110px"
           width="100px"
         />
       </Grid>

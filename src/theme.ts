@@ -2,31 +2,6 @@ import { createTheme } from '@mui/material/styles';
 
 export const theme = createTheme({
   components: {
-    MuiFilledInput: {
-      styleOverrides: {
-        root: {
-          backgroundColor: '#ffffff',
-          '&:hover': {
-            backgroundColor: '#ffffff',
-            '&:not(.Mui-disable)': {
-              '&:before': {
-                borderBottom: 'none',
-              },
-            },
-          },
-          borderRadius: 4,
-          '&.Mui-error': {
-            border: '2px solid red',
-            '&::after': {
-              borderBottom: 'none',
-            },
-          },
-          '&::before': {
-            borderBottom: 'none',
-          },
-        },
-      },
-    },
     MuiInputBase: {
       styleOverrides: {
         input: {
@@ -38,15 +13,6 @@ export const theme = createTheme({
         },
       },
     },
-    // MuiButton: {
-    //   styleOverrides: {
-    //     root: {
-    //       height: 52,
-    //       borderRadius: 10,
-    //       color:'secondary.main'
-    //     },
-    //   },
-    // },
     MuiLink: {
       styleOverrides: {
         root: {
