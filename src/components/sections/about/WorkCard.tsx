@@ -2,7 +2,6 @@ import Typography from "@mui/material/Typography";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Grid from "@mui/material/Unstable_Grid2"; // Grid version 2
-import useIsMobile from "../../../hooks/useIsMobile";
 
 type IImageData = {
   src: string;
@@ -23,7 +22,6 @@ type IWorkCardProps = {
 
 const WorkCard: React.FunctionComponent<IWorkCardProps> = ({ data }) => {
   const { description, leadExperience, images, title, icExperience } = data;
-  const isMobile = useIsMobile();
 
   const renderLogos = () => {
     if (!images || !images.length) return null;
