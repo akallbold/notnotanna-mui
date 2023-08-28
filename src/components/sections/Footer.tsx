@@ -5,15 +5,9 @@ import { constants } from "../../data/constants";
 import Grid from "@mui/material/Unstable_Grid2"; // Grid version 2
 
 function Footer(props: any) {
+  const { scrollToSection } = props;
   return (
     <Grid
-      // sx={{
-      //   backgroundColor: (theme) =>
-      //     theme.palette.mode === "light"
-      //       ? theme.palette.grey[200]
-      //       : theme.palette.grey[800],
-      //   p: 6,
-      // }}
       container
       sx={{ backgroundColor: "primary.main" }}
       component="footer"
@@ -22,7 +16,7 @@ function Footer(props: any) {
       alignItems="center"
       px={3}
     >
-      <Grid>
+      <Grid onClick={() => scrollToSection("top")}>
         <Typography variant="h1" color="secondary.main">
           AKB
         </Typography>

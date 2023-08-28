@@ -22,7 +22,7 @@ function a11yProps(index: number) {
 
 const education = [Flatiron, Yale, Uconn];
 
-export default function About(data: any) {
+export default function About() {
   const [value, setValue] = React.useState(0);
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
@@ -34,7 +34,6 @@ export default function About(data: any) {
       <Grid
         sx={{
           backgroundColor: "rgba(19,106,97,0.04)",
-          // flexGrow: 1
         }}
       >
         <Grid py={3}>

@@ -42,12 +42,7 @@ const WorkCard: React.FunctionComponent<IWorkCardProps> = ({ data }) => {
 
   return (
     <Card sx={{ maxWidth: 345, m: 2 }}>
-      <Grid
-        container
-        justifyContent="center"
-        py={3}
-        // display="flex"
-      >
+      <Grid container justifyContent="center" py={3}>
         {images && renderLogos()}
       </Grid>
       <CardContent>

@@ -9,7 +9,7 @@ import Button from "@mui/material/Button";
 const pages = [
   { label: "About Me", elementName: "about" },
   { label: "Projects", elementName: "projects" },
-  { label: "Just for Fun", elementName: "pictures" },
+  { label: "Tech Time Capsule", elementName: "pictures" },
 ];
 
 function Header(props: any) {
@@ -119,7 +119,6 @@ function Header(props: any) {
               <Button
                 key={page.label}
                 onClick={() => {
-                  console.log({ page });
                   scrollToSection(page.elementName);
                 }}
                 sx={{ color: "secondary.main", display: "block" }}

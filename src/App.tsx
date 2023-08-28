@@ -10,12 +10,14 @@ import Footer from "./components/sections/Footer";
 import useIsMobile from "./hooks/useIsMobile";
 
 function App() {
+  const top = React.useRef(null);
   const about = React.useRef(null);
   const projects = React.useRef(null);
   const pictures = React.useRef(null);
   const isMobile = useIsMobile();
 
   const scrollToSection = (elementRef: any) => {
+    if (elementRef === "top") elementRef = top;
     if (elementRef === "about") elementRef = about;
     if (elementRef === "projects") elementRef = projects;
     if (elementRef === "pictures") elementRef = pictures;
@@ -28,9 +30,10 @@ function App() {
   return (
     <div className="App">
       <Grid container flexDirection="column">
-        {!isMobile && <Header scrollToSection={scrollToSection} />}
-        <Landing />
-
+        <div ref={top} className="top">
+          {!isMobile && <Header scrollToSection={scrollToSection} />}
+          <Landing />
+        </div>
         <div ref={about} className="about">
           <About />
         </div>
@@ -40,7 +43,7 @@ function App() {
         <div ref={pictures} className="pictures">
           <Pictures />
         </div>
-        <Footer />
+        <Footer scrollToSection={scrollToSection} />
       </Grid>
     </div>
   );
