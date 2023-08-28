@@ -16,4 +16,6 @@ export const constants = {
   openAiChatGithubUrl: "https://github.com/akallbold/openai-chat",
   agileAppStoreUrl:
     "https://apps.apple.com/in/app/agile-fun-sticker-pack/id1501776587",
+
+  terminalBasedChatGPTGithubUrl: "https://github.com/akallbold/cli-chatGPT",
 };

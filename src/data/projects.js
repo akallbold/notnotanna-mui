@@ -51,5 +51,16 @@ export const AdvancedChatGPT = {
   imgAlt: "screenshot of ChatGPT",
   link: constants.chatGptUrl,
   subtitle: "Artificial Intelligence",
-  title: "Advanced ChatGPT Bot",
+  title: "OpenAI API preview",
+};
+
+export const TerminalBasedChatGPT = {
+  description:
+    "Sometimes you just want to talk to a robot in your terminal. This terminal based application allows you to do just that. It has no special features, but it's a nerdy way to interact with the OpenAI API.",
+  githubLink: constants.terminalBasedChatGPTGithubUrl,
+  img: "/images/chatGPT.png",
+  imgAlt: "screenshot of terminal based ChatGPT",
+  link: constants.terminalBasedChatGPTGithubUrl,
+  subtitle: "Artificial Intelligence",
+  title: "Terminal-based ChatGPT",
 };

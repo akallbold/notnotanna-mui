@@ -1,6 +1,7 @@
 import Carousel from "react-material-ui-carousel";
 import ProjectViewLarge from "./ProjectView";
 import {
+  TerminalBasedChatGPT,
   AdvancedChatGPT,
   ShantellTypewriter,
   NotBitly,
@@ -13,6 +14,7 @@ import LargeSection from "../LargeSection";
 import useIsMobile from "../../../hooks/useIsMobile";
 
 const projects = [
+  TerminalBasedChatGPT,
   AdvancedChatGPT,
   ShantellTypewriter,
   NotBitly,
@@ -36,13 +38,12 @@ function Projects() {
         py={3}
       >
         <Grid sx={{ paddingBottom: isMobile ? 6 : 3 }}>
-          {/* <Grid sx={{ paddingBottom: 3 }}> */}
           <Typography variant="h2">Personal Projects</Typography>
         </Grid>
         <Carousel
           interval={8000}
           navButtonsAlwaysVisible={!isMobile}
-          height={isMobile ? "110vh": "80vh"}
+          height={isMobile ? "110vh" : "80vh"}
         >
           {projects.map((project, i) => {
             return <ProjectViewLarge project={project} key={i} />;
