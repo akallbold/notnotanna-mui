@@ -34,11 +34,11 @@ function App() {
           {!isMobile && <Header scrollToSection={scrollToSection} />}
           <Landing />
         </div>
-        <div ref={about} className="about">
-          <About />
-        </div>
         <div ref={projects} className="projects">
           <Projects />
+        </div>
+        <div ref={about} className="about">
+          <About />
         </div>
         <div ref={pictures} className="pictures">
           <Pictures />
