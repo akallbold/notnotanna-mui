@@ -1,5 +1,5 @@
 import Carousel from "react-material-ui-carousel";
-import ProjectViewLarge from "./ProjectView";
+import ProjectView from "./ProjectView";
 import {
   TerminalBasedChatGPT,
   AdvancedChatGPT,
@@ -46,7 +46,7 @@ function Projects() {
           height={isMobile ? "110vh" : "80vh"}
         >
           {projects.map((project, i) => {
-            return <ProjectViewLarge project={project} key={i} />;
+            return <ProjectView project={project} key={i} />;
           })}
         </Carousel>
       </Grid>
