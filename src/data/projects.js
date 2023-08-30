@@ -47,7 +47,7 @@ export const AdvancedChatGPT = {
   description:
     "Through the OpenAI API, there are additional features available beyond what users can access on the public ChatGPT platform. This project uses the power of OpenAI API to unlock features to users to give them early access before these features get integrated into the public ChatGPT site.",
   githubLink: constants.openAiChatGithubUrl,
-  img: "/images/chatGPT.png",
+  img: "/images/projects/chatGPT.png",
   imgAlt: "screenshot of ChatGPT",
   link: constants.chatGptUrl,
   subtitle: "Artificial Intelligence",
@@ -58,7 +58,7 @@ export const TerminalBasedChatGPT = {
   description:
     "Sometimes you just want to talk to a robot in your terminal. This terminal based application allows you to do just that. It has no special features, but it's a nerdy way to interact with the OpenAI API.",
   githubLink: constants.terminalBasedChatGPTGithubUrl,
-  img: "/images/chatGPT.png",
+  img: "/images/projects/cli-chat.png",
   imgAlt: "screenshot of terminal based ChatGPT",
   link: constants.terminalBasedChatGPTGithubUrl,
   subtitle: "Artificial Intelligence",
