@@ -28,7 +28,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <Grid display="flex" justifyContent="center" className="App">
       <Grid container flexDirection="column">
         <div ref={top} className="top">
           {!isMobile && <Header scrollToSection={scrollToSection} />}
@@ -45,7 +45,7 @@ function App() {
         </div>
         <Footer scrollToSection={scrollToSection} />
       </Grid>
-    </div>
+    </Grid>
   );
 }
 
