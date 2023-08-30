@@ -3,10 +3,10 @@ export const SoftwareDevelopmentFront = {
   images: [
     { src: "/images/work/react.png", alt: "react logo" },
     { src: "/images/work/ts.png", alt: "typescript logo" },
-    { src: "/images/work/react.png", alt: "react logo" },
+    { src: "/images/work/angular.svg", alt: "angular logo" },
   ],
   leadExperience:
-    "Through consulting I experienced how 15+ engineering organizations are organized, work, and what tools they use. This has been priceless in my own management as I replicate what works and avoid what doesn't.",
+    "Through consulting I have experienced how 15+ engineering organizations are configured and what tools they use. This has been priceless in my own management as I replicate what works and avoid what doesn't.",
   icExperience:
     "I have worked on teams and individually on projects in different languages and industries, with a focus on Javascript. There is too much to capture here, but I'd love to discuss anything if you'd like to reach out!",
 };
