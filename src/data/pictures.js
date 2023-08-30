@@ -14,7 +14,7 @@ export const GoogleGlass = {
   date: "2014",
   description: {
     de: "OK Google - let's bring Glasses back, we are ready this time.",
-    en: "OK Google - let's bring Glasses back, we are ready this time. It's hard to believe how far ahead of it's time the Google Glass was. I remember putting them on and being blown away, but being less excited by the $1,500 price tag.",
+    en: "OK Google - let's bring Glasses back, we are ready this time. It's hard to believe how far ahead of it's time the Google Glass was. I remember putting them on and being blown away. I am looking forward to seeing how this space develops.",
     es: "OK Google - let's bring Glasses back, we are ready this time.",
     se: "OK Google - let's bring Glasses back, we are ready this time.",
   },
@@ -49,7 +49,7 @@ export const MacIcon = {
   date: "2020",
   description: {
     de: "First time creating AR application using MagicLeap. No one told me I would need to learn Unity.",
-    en: "Big Susan Kare fan. Its incredible what she could fit in a 32x32 pixel grid.",
+    en: "I am a big Susan Kare fan. Its incredible what she could fit in a 32x32 pixel grid.",
     es: "First time creating AR application using MagicLeap. No one told me I would need to learn Unity.",
     se: "First time creating AR application using MagicLeap. No one told me I would need to learn Unity.",
   },

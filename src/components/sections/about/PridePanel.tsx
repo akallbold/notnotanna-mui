@@ -24,7 +24,7 @@ export default function PridePanel(data: any) {
                     Alto. I loved the group and asked the founder, Leanne, if I
                     could start a Los Angeles Chapter. The Los Angeles chapter of
                     LWT had close to 300 members by the time I
-                    left for business school and now the organization has over
+                    left LA for business school and now the organization has over
                     100,000 members worldwide.`}
               </Typography>
             </Grid>
