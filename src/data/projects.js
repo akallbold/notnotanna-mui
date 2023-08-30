@@ -2,7 +2,7 @@ import { constants } from "./constants";
 
 export const Haikus = {
   description:
-    "Embracing the timeless brilliance of Meditations, I used an algorithm and the text from the book to programmatically determined the number of syllables in each word. The application then creates Haikus based on this word set. The result? A harmonious blend of art and code, where Haikus gracefully emerge from Marcus' original philosophies and prose.",
+    "Embracing the timeless brilliance of Meditations, I used an algorithm and the text from the book to programmatically determine the number of syllables in each word. The application then creates Haikus based on this word set. The result? A harmonious blend of art and code, where Haikus gracefully emerge from Marcus' original philosophies and prose.",
   githubLink: "",
   img: "/images/projects/marcus.png",
   imgAlt: "Marcus Aurelius",

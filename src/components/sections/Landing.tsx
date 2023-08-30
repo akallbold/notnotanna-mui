@@ -25,7 +25,7 @@ function Landing() {
           }}
         >
           <Typography variant="h2">
-            Hi! I am Anna, a fullstack engineer with a background as a project
+            Hi! I'm Anna, a full-stack engineer with a background as a project
             manager and product manager. Welcome to my site.
           </Typography>
         </Grid>

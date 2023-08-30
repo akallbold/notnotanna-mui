@@ -66,9 +66,8 @@ export default function PridePanel(data: any) {
                 </Typography>
               </Grid>
               <Typography variant="body1">
-                {`We did not have a Pride ERG when I joined. Three of my
-                    colleagues and I started the North American ERG and were
-                    part of recruiting conversations and took efforts to ensure
+                {`Started the BCG X North American Pride ERG. Three of my
+                    colleagues and I started the ERG and participated in recruiting conversations and took efforts to ensure
                     BCG X was a comfortable place for queer people to work.`}
               </Typography>
             </Grid>
