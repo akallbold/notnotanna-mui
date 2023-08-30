@@ -4,6 +4,7 @@ import {
   GoogleGlass,
   IOT,
   MagicLeap,
+  Github,
   MacIcon,
   TBL,
 } from "../../../data/pictures";
@@ -13,7 +14,7 @@ import Grid from "@mui/material/Unstable_Grid2"; // Grid version 2
 import { Typography } from "@mui/material";
 import useIsMobile from "../../../hooks/useIsMobile";
 
-const items = [Gateway, GoogleGlass, IOT, MagicLeap, MacIcon, TBL];
+const items = [Gateway, GoogleGlass, IOT, MagicLeap, Github, MacIcon, TBL];
 
 function Pictures() {
   const isMobile = useIsMobile();

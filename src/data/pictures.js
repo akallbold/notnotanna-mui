@@ -8,11 +8,6 @@ export const Gateway = {
   },
   img: "/images/slideshow/gateway.png",
   imgAlt: "Young Anna playing at the computer.",
-  // experience: [
-  //   { text: "SkiFree", icon: "DownhillSkiingIcon" },
-  //   { text: "Space Pinball", icon: "" },
-  //   { text: "Microsoft Bob", icon: "" },
-  // ],
 };
 
 export const GoogleGlass = {
@@ -25,7 +20,6 @@ export const GoogleGlass = {
   },
   img: "/images/slideshow/google-glass.jpg",
   imgAlt: "Anna loving the Google Glasses.",
-  // experience: [],
 };
 
 export const IOT = {
@@ -38,11 +32,6 @@ export const IOT = {
   },
   img: "/images/slideshow/iot.jpg",
   imgAlt: "Anna working on IOT things.",
-  // experience: [
-  //   { text: "Azure IOT Hub", icon: "" },
-  //   { text: "Interstacks", icon: "" },
-  //   { text: "soldering", icon: "" },
-  // ],
 };
 
 export const MagicLeap = {
@@ -55,10 +44,6 @@ export const MagicLeap = {
   },
   img: "/images/slideshow/magic-leap.png",
   imgAlt: "Anna wearing MagicLeap goggles.",
-  // experience: [
-  //   { text: "MagicLeap", icon: "" },
-  //   { text: "Unity", icon: "" },
-  // ],
 };
 export const MacIcon = {
   date: "2020",
@@ -82,8 +67,15 @@ export const TBL = {
   },
   img: "/images/slideshow/tbl.png",
   imgAlt: "Anna and Tim Berners Lee.",
-  // experience: [
-  //   { text: "Solid", icon: "" },
-  //   { text: "Development without Stackoverflow", icon: "" },
-  // ],
+};
+export const Github = {
+  date: "2020",
+  description: {
+    de: "Quarantining for COVID was a really interesting time. I stumbled across this sign walking through Brooklyn and it made me pause and think of a future when Github is a relic of the past.",
+    en: "Quarantining for COVID was a really interesting time. I stumbled across this sign walking through Brooklyn and it made me pause and think of a future when Github is a relic of the past.",
+    es: "Quarantining for COVID was a really interesting time. I stumbled across this sign walking through Brooklyn and it made me pause and think of a future when Github is a relic of the past.",
+    se: "Quarantining for COVID was a really interesting time. I stumbled across this sign walking through Brooklyn and it made me pause and think of a future when Github is a relic of the past.",
+  },
+  img: "/images/slideshow/github.jpg",
+  imgAlt: "Apocalyptic Github sign",
 };
