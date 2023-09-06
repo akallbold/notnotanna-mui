@@ -34,9 +34,9 @@ export const ShantellTypewriter = {
 
 export const NotBitly = {
   description:
-    "Introducing my personal take on a bit.ly clone! The driving force behind this project was the desire to learn how URL shorteners work. Although I don't expect the same amount of scaling and collision possibilities as the original, I still enjoy having my own working bit.ly clone to use for my own applications to be able to send folks clean looking URLs.",
+    "Introducing my personal take on a bit.ly clone! The driving force behind this project was the desire to learn how URL shorteners work. Although I don't expect the same amount of scaling and collision possibilities as the original, I still enjoy having my own working bit.ly clone to use for my own applications to be able to send folks clean looking URLs. This was also my testing ground for neumorphism design.",
   githubLink: constants.notBitlyGithubUrl,
-  img: "/images/projects/monkeycat.jpeg",
+  img: "/images/projects/not-bitly.png",
   imgAlt: "placeholder image",
   link: constants.notbitlyURL,
   subtitle: "Scaling Systems",
