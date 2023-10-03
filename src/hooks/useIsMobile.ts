@@ -10,6 +10,7 @@ function useIsMobile() {
     };
     window.addEventListener("resize", handleResize);
     if (windowWidth < 768) setIsMobile(true)
+    if (windowWidth >= 768) setIsMobile(false)
     return () => {
       window.removeEventListener("resize", handleResize);
     };
