@@ -15,7 +15,7 @@ type IProjectCardProps = {
   project: IProjectCard;
 };
 
-const ProjectViewLarge = ({ project }: IProjectCardProps) => {
+const ProjectView = ({ project }: IProjectCardProps) => {
   const isMobile = useIsMobile();
 
   return (
@@ -24,7 +24,7 @@ const ProjectViewLarge = ({ project }: IProjectCardProps) => {
       flexDirection={isMobile ? "column" : "row"}
       px={3}
       justifyContent={isMobile ? "start" : "space-evenly"}
-      sx={{ height: "100%" }}
+      // sx={{ height: "100%" }}
     >
       <Grid
         container
@@ -73,4 +73,4 @@ const ProjectViewLarge = ({ project }: IProjectCardProps) => {
   );
 };
 
-export default ProjectViewLarge;
+export default ProjectView;

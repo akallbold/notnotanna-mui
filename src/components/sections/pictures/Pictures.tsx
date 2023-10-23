@@ -23,7 +23,7 @@ function Pictures() {
     <Grid
       sx={{
         backgroundColor: "rgba(19,106,97,0.04)",
-        minHeight: isMobile ? "75vh" : "100vh",
+        // minHeight: "100vh",
       }}
       justifyContent="center"
       alignContent="center"

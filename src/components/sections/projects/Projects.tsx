@@ -33,7 +33,6 @@ function Projects() {
         sx={{
           backgroundColor: "rgba(248,212,197, 0.3)",
           width: "100%",
-          height: "100%",
         }}
         py={3}
       >
@@ -43,7 +42,7 @@ function Projects() {
         <Carousel
           interval={8000}
           navButtonsAlwaysVisible={!isMobile}
-          height={isMobile ? "110vh" : "80vh"}
+          height="80vh"
         >
           {projects.map((project, i) => {
             return <ProjectView project={project} key={i} />;

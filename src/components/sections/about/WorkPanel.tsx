@@ -37,14 +37,7 @@ function WorkPanel() {
   return (
     <>
       {isMobile ? (
-        <Grid
-          sx={{
-            backgroundColor: "rgba(19,106,97,0.04)",
-          }}
-          justifyContent="center"
-          alignContent="center"
-          width="100%"
-        >
+        <Grid justifyContent="center" alignContent="center" width="100%">
           <Carousel
             interval={8000}
             navButtonsAlwaysVisible={false}
