@@ -12,8 +12,8 @@ function Landing() {
         container
         sx={{
           backgroundImage: isMobile
-            ? "url(/images/hero-mobile.png)"
-            : "url(/images/hero.png)",
+            ? "url(/images/hero-mobile.jpeg)"
+            : "url(/images/hero.jpeg)",
           backgroundSize: "cover",
           justifyContent: "center",
           alignContent: "center",
