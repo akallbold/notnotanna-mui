@@ -17,8 +17,20 @@ function Landing() {
           backgroundSize: "cover",
           justifyContent: "center",
           alignContent: "center",
+          preload: "true",
         }}
       >
+        {/* <img
+          src={isMobile ? "/images/hero-mobile.jpeg" : "/images/hero.jpeg"}
+          alt={"hero"}
+          // backgroundSize="cover"
+          style={{ objectFit: "cover", zIndex: -1 }}
+          // justifyContent: "center",
+          // alignContent: "center",
+          loading="lazy"
+          width="100%"
+          // height="100vh"
+        /> */}
         <Grid
           sx={{
             width: isMobile ? "80%" : "40%",

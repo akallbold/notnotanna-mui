@@ -48,19 +48,25 @@ const WorkCard: React.FunctionComponent<IWorkCardProps> = ({ data }) => {
       <CardContent>
         <Grid container justifyContent="center">
           <Grid>
-            <Typography gutterBottom variant="h5">
+            <Typography gutterBottom variant="h5" component={"span"}>
               {title}
             </Typography>
           </Grid>
           {description && (
             <Grid py={1}>
-              <Typography variant="body1">{description}</Typography>
+              <Typography variant="body1" component={"span"}>
+                {description}
+              </Typography>
             </Grid>
           )}
           <Grid py={1}>
             {leadExperience && (
               <>
-                <Typography variant="body1" sx={{ fontWeight: "bold" }}>
+                <Typography
+                  variant="body1"
+                  sx={{ fontWeight: "bold" }}
+                  component={"span"}
+                >
                   Lead Engineer:
                 </Typography>
                 <Typography variant="body1">{leadExperience}</Typography>
@@ -70,7 +76,11 @@ const WorkCard: React.FunctionComponent<IWorkCardProps> = ({ data }) => {
           <Grid py={1}>
             {icExperience && (
               <>
-                <Typography variant="body1" sx={{ fontWeight: "bold" }}>
+                <Typography
+                  variant="body1"
+                  sx={{ fontWeight: "bold" }}
+                  component={"span"}
+                >
                   IC:
                 </Typography>
                 <Typography variant="body1">{icExperience}</Typography>
